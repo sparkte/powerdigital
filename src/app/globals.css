@@ -9,6 +9,23 @@
        url('../fonts/fcd3d7597d60ffcb290e.ttf') format('truetype');
   /* Add more @font-face blocks for different weights (e.g., 'MyCustomFont Bold') */
 }
+.icon-arrow-up-right:before {
+  font-family: 'MyCustomFont' !important;
+  content: "\e912"; /* or whatever your demo HTML shows for the arrow-up-right */
+}
+.icon-chevron-right:before {
+    font-family: 'MyCustomFont', sans-serif !important;
+    content: "\e911"; /* This is the hex value for "" */
+}
+.icon-arrow-right:before {
+    font-family: 'MyCustomFont', sans-serif !important;
+    content: "\e913";
+}
+.icon-arrow-left:before {
+  font-family: 'MyCustomFont', sans-serif !important;
+    content: "\e913";
+}
+
 
 .pin-spacer{
   height: 1856px !important;
@@ -79,6 +96,12 @@ section:before {
   opacity: 1 !important;
   transform: translateY(0) !important;
 }
+.mobile-menu {
+  display: none;
+}
+.mobile-menu.open {
+  display: block;
+}
 
 @media (max-width: 990px) {
   .pin-spacer{
@@ -87,7 +110,7 @@ section:before {
   }
     .hero--home {
     width: 100vw !important;
-    height: auto !important;
+    height: 400px !important;
     /* min-height: 70vh !important; */
     background: #f8f8f8;
     position: relative;
@@ -99,8 +122,41 @@ section:before {
     align-items: center;
     justify-content: flex-start;
     overflow: hidden;
+    position: relative !important;
   }
+.blog-card-grid{
+  max-width: 100% !important;
+}
+.blog-card-grid__item,
+.swiper-slide {
+  height: auto !important; /* Override Swiper's default height calculation */
+}
+.header.menu-open-state .nav-container {
+        /* Shows the menu */
+        opacity: 1 !important;
+        visibility: visible !important; 
+        transform: none !important;
+          width: 100% !important;
+      }
+.header .navbar-container .nav-container {
+  /* opacity: 1 !important; */
+  width: 100% !important;
+  /* transform: none !important; */
+}
+/* Ensure the article content stretches vertically to fill the card */
+.card-blog {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 
+/* Ensure the content area pushes the action button to the bottom */
+.card-blog__content {
+  flex-grow: 1; /* Allows content area to take up all available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures title/text is vertically justified */
+}
 .hero--home__name {
  display: none !important;
 }
@@ -110,7 +166,7 @@ section:before {
   width: 100% !important;
   max-width: 455px;
   height: auto !important;
-  aspect-ratio: 455 / 243;
+  /* aspect-ratio: 455 / 243; */
   background-color: #000;
   border-radius: 10px;
   margin-bottom: 20px;
