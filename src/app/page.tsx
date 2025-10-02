@@ -102,35 +102,6 @@ export default function Home() {
   <Metadtalinks/>
   <Fullheader showLogo={showNavbarLogo} />
   <main>
-    {/* <section id="hero-home" className="hero--home bg-light">
-      <h1>
-        <Image
-          id="hero-logo"
-          className="hero--home__name"
-          src={PowerSvg}
-          alt=""
-        />
-      </h1>
-      <div>
-        <div>
-          <div id="content-video" className="hero--home__content-video">
-            <iframe
-              id="vimeoplayer"
-              src="https://player.vimeo.com/video/1001743392?api=1&background=1"
-              className="hero--home__video"
-              allow="autoplay"
-            />
-          </div>
-          <div className="hero--home__text">
-            <h2 className="heading-medium">
-              <span>Power is </span>a world-class, tech-enabled growth marketing
-              agency.{" "}
-            </h2>
-          </div>
-        </div>
-      </div>
-    </section> */}
-
     <HeroAnimation PowerSvg={PowerSvg} onHeroLogoHide={setShowNavbarLogo}/>
     <Seprator/>
     <section className="dual-layout-section bg-light ">
