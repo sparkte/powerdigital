@@ -16,6 +16,8 @@ const HeroAnimation: React.FC<HeroAnimationProps> = ({ PowerSvg, onHeroLogoHide 
   const logoRef = useRef<HTMLImageElement>(null);
   const videoRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLDivElement>(null);
+  const MOBILE_BREAKPOINT = 990; // px, adjust if needed
+
   
   useEffect(() => {
     const wrapper = wrapperRef.current;
@@ -24,6 +26,23 @@ const HeroAnimation: React.FC<HeroAnimationProps> = ({ PowerSvg, onHeroLogoHide 
     const text = textRef.current;
     if (!wrapper || !logo || !video || !text) return;
     
+    if (window.innerWidth < MOBILE_BREAKPOINT) {
+    // On mobile: show logo, nav, and text instantly (no animation)
+    if (logoRef.current) {
+      logoRef.current.style.opacity = "1";
+    }
+    if (videoRef.current) {
+      videoRef.current.style.opacity = "1";
+    }
+    if (textRef.current) {
+      textRef.current.style.opacity = "1";
+    }
+    // Optionally, call onHeroLogoHide(true) if state is used
+    if (onHeroLogoHide) {
+      onHeroLogoHide(true);
+        }
+      return;
+    }
     const tlPinned = gsap.timeline({
       scrollTrigger: {
         trigger: wrapper,
