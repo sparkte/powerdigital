@@ -73,6 +73,7 @@ import Fullheader from '../components/fullheader';
 import { useState } from "react";
 import Metadtalinks from '../components/metadtalinks';
 import Seprator from '../components/seprator';
+import BlogCardSlider from '../components/BlogCardSlider';
 const logos = [
   AliceOliviaPdm,
   AviatorNationPdm,
@@ -771,7 +772,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="blog-card-grid swiper">
+      <BlogCardSlider/>
+      {/* <div className="blog-card-grid swiper">
         <div className="swiper-wrapper">
           <div className="swiper-slide blog-card-grid__item">
             <article className="card-blog">
@@ -1021,7 +1023,7 @@ export default function Home() {
             </article>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   </main>
   <footer className="footer">
