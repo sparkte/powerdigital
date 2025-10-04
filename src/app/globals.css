@@ -48,39 +48,7 @@
 /* .navbar-container{
   background-color: #f4f4f7;
 } */
-.xyz-logocarousel-section {
-  width: 100%;
-  padding-top: 120px;
-  padding-bottom: 100px;
-  background: #f4f4f7;
-  overflow: hidden;
-}
-.xyz-logocarousel-title {
-  text-align: center;
-}
-.xyz-logocarousel-title h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  letter-spacing: .015em;
-  margin-bottom: 62px;
-}
-.xyz-logocarousel-track {
-  width: 100%;
-  overflow: hidden;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  padding: 8px 0;
-  border: none !important;
-   box-shadow: none !important;
-}
-.xyz-logocarousel-logo img {
-  height: 100%;
-  width: auto;
-  max-width: 120px;
-  object-fit: contain;
-  filter: brightness(.99);
-}
+
 
 
 section:before {
@@ -111,7 +79,6 @@ section:before {
     .hero--home {
     width: 100vw !important;
     height: 400px !important;
-    /* min-height: 70vh !important; */
     background: #f8f8f8;
     position: relative;
     z-index: 51;
@@ -129,33 +96,28 @@ section:before {
 }
 .blog-card-grid__item,
 .swiper-slide {
-  height: auto !important; /* Override Swiper's default height calculation */
+  height: auto !important;
 }
 .header.menu-open-state .nav-container {
-        /* Shows the menu */
         opacity: 1 !important;
         visibility: visible !important; 
         transform: none !important;
           width: 100% !important;
       }
 .header .navbar-container .nav-container {
-  /* opacity: 1 !important; */
   width: 100% !important;
-  /* transform: none !important; */
 }
-/* Ensure the article content stretches vertically to fill the card */
 .card-blog {
   height: 100%;
   display: flex;
   flex-direction: column;
 }
 
-/* Ensure the content area pushes the action button to the bottom */
 .card-blog__content {
-  flex-grow: 1; /* Allows content area to take up all available space */
+  flex-grow: 1; 
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Ensures title/text is vertically justified */
+  justify-content: space-between; 
 }
 .hero--home__name {
  display: none !important;
@@ -166,7 +128,6 @@ section:before {
   width: 100% !important;
   max-width: 455px;
   height: auto !important;
-  /* aspect-ratio: 455 / 243; */
   background-color: #000;
   border-radius: 10px;
   margin-bottom: 20px;
