@@ -4,6 +4,75 @@ import pepdmimage from '../../images/pe_pdm_image-768x430.png'
 import education from '../../images/Education-768x768.jpg'
 import homeservices from '../../images/0_2-2-768x768.jpg'
 import healthcare from '../../images/0_1-1-768x768.jpg'
+import Cardslider from '../../app/services/maincomonents/cardslider';
+
+const CardSliderData = [
+    {
+        id: "media-relations",
+        title: "Media Relations",
+        description: "We know how to tell your story to maximize impact and build lasting buzz.",
+        image: "https://powerdigitalmarketing.com/wp-content/uploads/2024/11/Event-Opportunities-768x768.jpg",
+        imageAlt: "Media Relations",
+        bgColor: "bg-white" as const,
+        actionUrl: "#"
+    },
+    {
+        id: "campaigns-activations",
+        title: "Campaigns + Activations",
+        description: "Showstopping stunts, memorable IRL activations , and other viral moments that will get people talking about your brand.",
+        image: "https://powerdigitalmarketing.com/wp-content/uploads/2024/11/Possible-Story-Angles-768x768.jpg",
+        imageAlt: "Campaigns + Activations",
+        bgColor: "bg-secondary" as const,
+        actionUrl: "#"
+    },
+    {
+        id: "thought-leadership",
+        title: "Thought Leadership",
+        description: "Elevate your brand's reputation and executive visibility with impactful interviews, speaking opportunities, op-eds, and more.",
+        image: "https://powerdigitalmarketing.com/wp-content/uploads/2024/11/Best-Media-Matches1-768x768.jpg",
+        imageAlt: "Thought Leadership",
+        bgColor: "bg-primary" as const,
+        actionUrl: "#"
+    },
+    {
+        id: "partnerships",
+        title: "Partnerships",
+        description: "Facilitate creative, strategic partnership campaigns that cross categories, increase brand awareness, reach new audiences, expand marketing resources, and so much more.",
+        image: "https://powerdigitalmarketing.com/wp-content/uploads/2025/01/0_1-2-768x768.jpg",
+        imageAlt: "Partnerships",
+        bgColor: "bg-white" as const,
+        actionUrl: "#"
+    },
+    {
+        id: "award-submissions",
+        title: "Award Submissions",
+        description: "Our team is always keeping a pulse on the best awards for our clients to submit for in order to build recognition and credibility",
+        image: "https://powerdigitalmarketing.com/wp-content/uploads/2024/11/Display-and-Native-768x768.jpg",
+        imageAlt: "Award Submissions",
+        bgColor: "bg-secondary" as const,
+        actionUrl: "#"
+    },
+    {
+        id: "affiliate-marketing",
+        title: "Affiliate Marketing",
+        description: "A combined effort between PR and Affiliate on a strategic top-of-funnel performance PR approach allows our clients to be considered for all consumer media opportunities.",
+        image: "https://powerdigitalmarketing.com/wp-content/uploads/2025/01/0_3-5-768x768.jpg",
+        imageAlt: "Affiliate Marketing",
+        bgColor: "bg-primary" as const,
+        actionUrl: "#"
+    },
+    {
+        id: "corporate-crisis-communications",
+        title: "Corporate + Crisis Communications",
+        description: "Strategic counsel and messaging support to guide your company through its biggest (and toughest) moments.",
+        image: "https://powerdigitalmarketing.com/wp-content/uploads/2024/12/0_2-1-768x768.jpg",
+        imageAlt: "Corporate + Crisis Communications",
+        bgColor: "bg-white" as const,
+        actionUrl: "#"
+    }
+];
+
+
 export default function multitextindustries() {
   return (
      <section className="multi-text-section bg-light">
@@ -64,7 +133,8 @@ export default function multitextindustries() {
               </div>
             </div>
           </div>
-          <div className="digital-marketing-overview__carousel ">
+          <Cardslider data={CardSliderData} />
+          {/* <div className="digital-marketing-overview__carousel ">
             <span className="badge rounded-pill mt-5 bg-light" />
             <div className="slider">
               <div className="swiper-container">
@@ -197,7 +267,7 @@ export default function multitextindustries() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </section>
   )
 }

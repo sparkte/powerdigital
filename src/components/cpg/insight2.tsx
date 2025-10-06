@@ -1,8 +1,4 @@
-import TechSoftwareImage from '../../images/pr_pdm_image-768x430.png';
-import ProfessionalServicesImage from '../../images/Persona-Development_pdm_image-768x430.png';
-import ManufacturingImage from '../../images/Manufacturing-768x768.jpg';
-import BusinessFinanceImage from '../../images/pe_pdm_image-768x430.png';
-import B2BPEImage from '../../images/0_2-9-768x768.jpg';
+import React from 'react'
 
 import Cardslider from '../../app/services/maincomonents/cardslider';
 
@@ -72,16 +68,14 @@ const CardSliderData = [
     }
 ];
 
-
-export default function industries() {
+export default function insight2() {
   return (
+    <>
     <section className="multi-text-section bg-dark">
       <div className="multi-text-section__text">
         <div className="title">
-          <span className="badge rounded-pill bg-dark">Industries</span>
-          <h2>
-            From our talent to our tech, this is new wave digital marketing.
-          </h2>
+          <span className="badge rounded-pill bg-light">Insights</span>
+          <h2>From Retail Strategy to Data Science—This Is Your Growth Team</h2>
         </div>
         <div className="paragraph">
           <a
@@ -102,10 +96,11 @@ export default function industries() {
             <div className="text">
               <h3>Undeniable Speed</h3>
               <p>
-                Everyone has capabilities, but coupling them with agility is the
-                holy grail of growth marketing. We dive into the numbers to see
-                what tactics are creating incremental or new revenue and which
-                ones aren’t, then we swiftly adapt and execute.
+                <span style={{ fontWeight: 400 }}>
+                  Navigating the ever-changing consumer market requires agility.
+                  We analyze the data, uncover opportunities, and execute with
+                  speed to keep your brand ahead of the curve.
+                </span>
               </p>
             </div>
           </div>
@@ -113,11 +108,11 @@ export default function industries() {
             <div className="text">
               <h3>Undeniable Expertise</h3>
               <p>
-                Our team boasts some of the brightest minds in the world of
-                digital and performance marketing, and everyone here is
-                lockstep-focused on business impact — evidenced by a stellar
-                96+% client retention rate. Expect nothing less than
-                best-in-class.
+                <span style={{ fontWeight: 400 }}>
+                  Our team includes some of the brightest minds in consumer
+                  marketing, with an impressive 96+% client retention rate.
+                  Expect nothing but the best.
+                </span>
               </p>
             </div>
           </div>
@@ -125,16 +120,16 @@ export default function industries() {
             <div className="text">
               <h3>Undeniable Results</h3>
               <p>
-                We’re driven by outcomes, not ego. Perhaps that’s why we grow
-                companies 2.6x faster than the industry average, with 27+% YoY
-                revenue increases. All of our critical capabilities prioritize
-                optimizing our clients’ investments for maximum ROI.
+                <span style={{ fontWeight: 400 }}>
+                  Our strategies drive outcomes that matter: 2.6x faster growth
+                  than industry averages and 27+% YoY revenue increases. We make
+                  every dollar count for maximum ROI.
+                </span>
               </p>
             </div>
           </div>
         </div>
       </div>
-
       <Cardslider data={CardSliderData} />
       {/* <div className="digital-marketing-overview__carousel ">
         <span className="badge rounded-pill mt-5 bg-light" />
@@ -145,24 +140,26 @@ export default function industries() {
                 <article className="card-slider bg-white">
                   <div className="card-slider__image">
                     <img
-                      src={TechSoftwareImage.src}
-                      alt="Technology & Software"
+                      src="images/beauty_pdm_image-768x430.png"
+                      alt="Beauty & Personal Care"
                     />
                   </div>
                   <div className="card-slider__content">
-                    <h3 className="title">Technology &amp; Software</h3>
+                    <h3 className="title">Beauty &amp; Personal Care</h3>
                     <div className="paragraph">
                       <p>
-                        We specialize in crafting marketing strategies that not
-                        only highlight your innovative solutions but also
-                        provide the compelling case studies, product demos, and
-                        webinars that convert leads into loyal customers.
+                        We understand that your brand needs to not only keep up
+                        but lead the conversation. Our team is trained to
+                        highlight the unique qualities of your products, from
+                        ingredient transparency to sustainable packaging,
+                        ensuring campaigns resonate with the right audience for
+                        long term success.
                       </p>
                     </div>
                   </div>
                   <div className="card-slider__action">
                     <a
-                      href="https://powerdigitalmarketing.com/industries/technology-and-software/"
+                      href="https://powerdigitalmarketing.com/industries/beauty/"
                       className="btn btn--round btn-light stretched-link"
                     >
                       <div className="icon">
@@ -176,25 +173,25 @@ export default function industries() {
                 <article className="card-slider bg-secondary">
                   <div className="card-slider__image">
                     <img
-                      src={ProfessionalServicesImage.src}
-                      alt="Professional Services"
+                      src="images/fashion_pdm_image-768x430.png"
+                      alt="Fashion & Apparel"
                     />
                   </div>
                   <div className="card-slider__content">
-                    <h3 className="title">Professional Services</h3>
+                    <h3 className="title">Fashion &amp; Apparel</h3>
                     <div className="paragraph">
                       <p>
-                        Our recommendations are designed to position your firm
-                        as the go-to expert in your field, leveraging targeted
-                        campaigns that speak directly to the unique needs of
-                        your industry. We help you build and maintain the
-                        credibility that drives long-term success.
+                        In this fast-paced industry, staying ahead of trends
+                        while maintaining brand integrity is crucial. Our
+                        dedicated fashion division keeps your business goals at
+                        the forefront while delivering a wealth of industry
+                        knowledge.
                       </p>
                     </div>
                   </div>
                   <div className="card-slider__action">
                     <a
-                      href="https://powerdigitalmarketing.com/industries/professional-services/"
+                      href="https://powerdigitalmarketing.com/industries/fashion/"
                       className="btn btn--round btn-light stretched-link"
                     >
                       <div className="icon">
@@ -208,25 +205,26 @@ export default function industries() {
                 <article className="card-slider bg-primary">
                   <div className="card-slider__image">
                     <img
-                      src={ManufacturingImage.src}
-                      alt="Manufacturing"
+                      src="images/0_3-5-768x768.jpg"
+                      alt="Health and Wellness"
                     />
                   </div>
                   <div className="card-slider__content">
-                    <h3 className="title">Manufacturing</h3>
+                    <h3 className="title">Health and Wellness</h3>
                     <div className="paragraph">
                       <p>
-                        The manufacturing industry is built on efficiency,
-                        precision, and innovation—and your marketing should
-                        reflect that. We understand the complexities of your
-                        supply chains, the importance of scalability, and the
-                        need to showcase your technical prowess.
+                        Health and wellness is a lifestyle, not just a product
+                        category. We understand that consumers in this space are
+                        looking for solutions that align with their values to
+                        enhance their overall well-being. Our team is well
+                        versed in both the education and compliance required to
+                        drive success.
                       </p>
                     </div>
                   </div>
                   <div className="card-slider__action">
                     <a
-                      href="https://powerdigitalmarketing.com/industries/manufacturing/"
+                      href="https://powerdigitalmarketing.com/industries/health-and-wellness/"
                       className="btn btn--round btn-light stretched-link"
                     >
                       <div className="icon">
@@ -240,25 +238,25 @@ export default function industries() {
                 <article className="card-slider bg-white">
                   <div className="card-slider__image">
                     <img
-                      src={BusinessFinanceImage.src}
-                      alt="Business & Finance"
+                      src="images/food-and-beverage_pdm_image-768x430.png"
+                      alt="Food & Beverage"
                     />
                   </div>
                   <div className="card-slider__content">
-                    <h3 className="title">Business &amp; Finance</h3>
+                    <h3 className="title">Food &amp; Beverage</h3>
                     <div className="paragraph">
                       <p>
-                        Navigating the business &amp; finance sector requires a
-                        deep understanding of the markets intricacies and the
-                        regulatory landscape that governs it. We know that in
-                        this industry, success hinges on trust, transparency,
-                        and a keen eye for detail.
+                        In the food &amp; beverage industry, taste is just the
+                        beginning. From elevating your D2C strategy to
+                        connecting the dots on omni-channel, we understand the
+                        nuances required to ensure your brand remains top of
+                        mind with your target audience.
                       </p>
                     </div>
                   </div>
                   <div className="card-slider__action">
                     <a
-                      href="https://powerdigitalmarketing.com/industries/business-and-finance/"
+                      href="https://powerdigitalmarketing.com/industries/food-beverage/"
                       className="btn btn--round btn-light stretched-link"
                     >
                       <div className="icon">
@@ -271,22 +269,24 @@ export default function industries() {
               <div className="swiper-slide swiper-slide--manual_services_cards">
                 <article className="card-slider bg-secondary">
                   <div className="card-slider__image">
-                    <img src={B2BPEImage.src} alt="B2B PE Firms" />
+                    <img src="images/Pet-768x768.jpg" alt="Pet Products" />
                   </div>
                   <div className="card-slider__content">
-                    <h3 className="title">B2B PE Firms</h3>
+                    <h3 className="title">Pet Products</h3>
                     <div className="paragraph">
                       <p>
-                        Elevate your private equity firm with marketing
-                        strategies that drive portfolio growth, attract top
-                        C-level talent, and enhance brand visibility in a
-                        crowded PE landscape.
+                        Pet owners are more than just customers—they’re
+                        passionate advocates for their furry family members.
+                        Whether it’s through educational content,
+                        community-building initiatives, or targeted campaigns,
+                        we help you build a brand that pet owners trust and
+                        continue to return to.
                       </p>
                     </div>
                   </div>
                   <div className="card-slider__action">
                     <a
-                      href="https://powerdigitalmarketing.com/industries/b2b-pe-firms/"
+                      href="https://powerdigitalmarketing.com/industries/pet-products/"
                       className="btn btn--round btn-light stretched-link"
                     >
                       <div className="icon">
@@ -307,5 +307,6 @@ export default function industries() {
         </div>
       </div> */}
     </section>
+    </>
   )
 }

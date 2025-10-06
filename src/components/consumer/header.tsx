@@ -926,7 +926,7 @@ export default function Header() {
                         </div>
                     </a>
                     <div className="notifications-wrapper">
-                        <div className="notification-number hide-notifications">
+                        <div className="notification-number">
                             <span>2</span>
                         </div>
                         <div className="notification-bell">

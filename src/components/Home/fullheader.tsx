@@ -910,7 +910,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                     <li className="mega-menu-item">
                       <a href="/resources/" aria-label="Go to Downloadables page">
                         <div className="text">
-                          <h4>Downloadables</h4>
+                          <h4>Downloadables </h4>
                           <p />
                         </div>
                       </a>
@@ -929,7 +929,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
             </div>
           </a>
           <div className="notifications-wrapper">
-            <div className="notification-number hide-notifications">
+            <div className="notification-number ">
               <span>2</span>
             </div>
             <div className="notification-bell">
