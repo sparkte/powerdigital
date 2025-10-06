@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import Marquee from "react-fast-marquee";
 
 // =================================================================
@@ -72,19 +72,27 @@ const useIsMobile = () => {
 // =================================================================
 // 4. REUSABLE LOGO RENDERER (Wrapper for Marquee)
 // =================================================================
-const renderLogoRow = (logoList) => (
+const LOGO_CONTAINER_HEIGHT = 70;
+const LOGO_CONTAINER_WIDTH = 150; // Increased width slightly to prevent squishing if needed
+
+const renderLogoRow = (logoList: StaticImageData[]) => (
     <>
         {logoList.map((logo, idx) => (
             <span 
                 key={idx} 
                 className="logo-carousel__logo" 
                 style={{
-                    width: 120,
-                    height: 70,
+                    // Enforce fixed dimensions on the container
+                    width: LOGO_CONTAINER_WIDTH,
+                    height: LOGO_CONTAINER_HEIGHT,
+                    
+                    // Center the flex item (Image) horizontally and vertically
                     display: "inline-flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    marginRight: 50,
+                    
+                    // Spacing and aesthetics
+                    marginRight: 60, // Increased margin for better separation
                     background: "transparent",
                     borderRadius: "10px",
                     padding: "0 10px",
@@ -93,10 +101,12 @@ const renderLogoRow = (logoList) => (
                 <Image 
                     src={logo} 
                     alt="Client Logo" 
-                    // Using fixed size as per previous Marquee example
-                    height={70} 
-                    width={120} 
-                    style={{ objectFit: 'contain' }}
+                    // Set the max size for the image to fit the container
+                    height={LOGO_CONTAINER_HEIGHT} 
+                    width={LOGO_CONTAINER_WIDTH} 
+                    // CRITICAL FIX: objectFit: 'contain' ensures the image scales down
+                    // without distortion to fit within the height/width bounds.
+                    style={{ objectFit: 'contain', width: '100%', height: '100%' }}
                 />
             </span>
         ))}
@@ -121,13 +131,13 @@ export default function Logocarousal() {
                 // MOBILE VIEW: Two separate Marquee rows
                 <div className="logo-carousel__mobile-rows">
                     {/* Row 1: Scrolls Left (Default) */}
-                    <div className="logo-carousel__track" style={{ height: 70, marginBottom: '20px' }}>
+                    <div className="logo-carousel__track" style={{ height: LOGO_CONTAINER_HEIGHT, marginBottom: '20px' }}>
                         <Marquee speed={32} gradient={true} gradientWidth={120}>
                             {renderLogoRow(MOBILE_ROW_1)}
                         </Marquee>
                     </div>
                     {/* Row 2: Scrolls Right (Opposite Direction) */}
-                    <div className="logo-carousel__track" style={{ height: 70 }}>
+                    <div className="logo-carousel__track" style={{ height: LOGO_CONTAINER_HEIGHT }}>
                         <Marquee speed={32} gradient={true} gradientWidth={120} direction="right">
                             {renderLogoRow(MOBILE_ROW_2)}
                         </Marquee>
@@ -136,7 +146,7 @@ export default function Logocarousal() {
             ) : (
                 // DESKTOP VIEW: Single Marquee row with all logos
                 <div className="logo-carousel__desktop-row">
-                    <div className="logo-carousel__track" style={{ height: 70 }}>
+                    <div className="logo-carousel__track" style={{ height: LOGO_CONTAINER_HEIGHT }}>
                         <Marquee speed={32} gradient={true} gradientWidth={120}>
                             {renderLogoRow(ALL_LOGOS)}
                         </Marquee>

@@ -35,7 +35,7 @@ export default function hero() {
       </div>
       <div className="single-hero__image">
         <div className="single-badge"></div>
-        <img src={cosumerproduct} alt="" />
+        <img src={cosumerproduct.src} alt="" />
       </div>
     </section>
     </>

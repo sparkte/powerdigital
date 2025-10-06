@@ -77,7 +77,7 @@ export default function insights() {
                 <article className="card-slider bg-white">
                   <div className="card-slider__image">
                     <img
-                      src={image1}
+                      src={image1.src}
                       alt="Beauty & Personal Care"
                     />
                   </div>
@@ -110,7 +110,7 @@ export default function insights() {
                 <article className="card-slider bg-secondary">
                   <div className="card-slider__image">
                     <img
-                      src={image2}
+                      src={image2.src}
                       alt="Fashion & Apparel"
                     />
                   </div>
@@ -142,7 +142,7 @@ export default function insights() {
                 <article className="card-slider bg-primary">
                   <div className="card-slider__image">
                     <img
-                      src={image3}
+                      src={image3.src}
                       alt="Health and Wellness"
                     />
                   </div>
@@ -175,7 +175,7 @@ export default function insights() {
                 <article className="card-slider bg-white">
                   <div className="card-slider__image">
                     <img
-                      src={image4}
+                      src={image4.src}
                       alt="Food & Beverage"
                     />
                   </div>
@@ -206,7 +206,7 @@ export default function insights() {
               <div className="swiper-slide swiper-slide--manual_services_cards">
                 <article className="card-slider bg-secondary">
                   <div className="card-slider__image">
-                    <img src={image5} alt="Pet Products" />
+                    <img src={image5.src} alt="Pet Products" />
                   </div>
                   <div className="card-slider__content">
                     <h3 className="title">Pet Products</h3>

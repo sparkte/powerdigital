@@ -22,35 +22,35 @@ export default function solution() {
       <ul className="section-text-logos__list-logos">
         <li>
           <picture>
-            <img src={amazon} alt="" />
+            <img src={amazon.src} alt="" />
           </picture>
         </li>
         <li>
           <picture>
             <img
-              src={metalogo}
+              src={metalogo.src}
               alt=""
             />
           </picture>
         </li>
         <li>
           <picture>
-            <img src={snowflake} alt="" />
+            <img src={snowflake.src} alt="" />
           </picture>
         </li>
         <li>
           <picture>
-            <img src={ttmarketing} alt="" />
+            <img src={ttmarketing.src} alt="" />
           </picture>
         </li>
         <li>
           <picture>
-            <img src={advanced} alt="" />
+            <img src={advanced.src} alt="" />
           </picture>
         </li>
         <li>
           <picture>
-            <img src={premier} alt="" />
+            <img src={premier.src} alt="" />
           </picture>
         </li>
       </ul>

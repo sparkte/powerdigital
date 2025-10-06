@@ -158,20 +158,7 @@ export default function metalinks() {
   {/* Google Tag Manager for WordPress by gtm4wp.com */}
   {/* GTM Container placement set to off */}
   {/* End Google Tag Manager for WordPress by gtm4wp.com */}
-  <link
-    rel="preload"
-    as="style"
-    onload="this.onload=null;this.rel='stylesheet'"
-    href="css/style.css"
-  />
-  <link
-    rel="preload"
-    as="style"
-    onload="this.onload=null;this.rel='stylesheet'"
-    href="css/endrock.styles.css"
-  />
-  {/* Primer - Website Tracking Script */}
-  {/* END OF - Primer - Website Tracking Script */}
+  
     </>
   )
 }

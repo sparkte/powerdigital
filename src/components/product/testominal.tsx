@@ -1,12 +1,13 @@
 import React from 'react'
 import image from "../../images/Hero1_Desktop_90ff40f9-4f69-4acd-ab6f-d5ac8cb69d12-2-e1733342755528.webp";
+import Image2 from "../../images/Profile-Image-from-Figma-1.png";
 export default function testominal() {
   return (
     <>
     <section className="full-image-testimonial bg-light  section-inner">
       <img
         className="full-image-testimonial__image"
-        src={image}
+        src={image.src}
         alt=""
         style={{ maxHeight: "px" }}
       />
@@ -24,7 +25,7 @@ export default function testominal() {
           <div className="person-info">
             <div className="person-photo">
               <img
-                src="images/Profile-Image-from-Figma-1.png"
+                src={Image2.src}
                 alt=""
                 srcSet=""
               />
