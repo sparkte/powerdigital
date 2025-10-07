@@ -1,5 +1,5 @@
 import Image from "next/image";
-import LogoWhiteSvg from "../../images/Logo-White.svg";
+import LogoWhiteSvg from "../../images/logo-white.svg";
 import FadeUp from "./FadeUp";
 export default function footer() {
   return (
