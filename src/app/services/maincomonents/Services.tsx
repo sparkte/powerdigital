@@ -1,5 +1,7 @@
 "use server"
 
+import { HiArrowUpRight } from 'react-icons/hi2';
+
 interface ServiceItem {
     title: string;
     description: string;

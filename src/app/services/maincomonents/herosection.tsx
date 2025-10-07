@@ -1,5 +1,6 @@
-"use server";
+"use server"
 
+import { HiArrowUpRight } from 'react-icons/hi2';
 
 interface HeroSectionData {
     badge: string;

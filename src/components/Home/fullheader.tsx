@@ -1,62 +1,62 @@
 "use client";
 // All your image imports remain here...
-import NovaReport from "../images/Nova_Reporting_100.png";
+import NovaReport from "../../images/Nova_Reporting_100.png";
 
-import Services_InfluencerOutreach from "../images/Services_InfluencerOutreach_100-1.png";
+import Services_InfluencerOutreach from "../../images/Services_InfluencerOutreach_100-1.png";
 
-import Services_SocialMedia from "../images/Services_SocialMedia_100.png";
+import Services_SocialMedia from "../../images/Services_SocialMedia_100.png";
 
-import ServicesSocialMedia from "../images/Services_SocialMedia_100.png";
+import ServicesSocialMedia from "../../images/Services_SocialMedia_100.png";
 
-import ServicesPublicRelations from "../images/Services_PublicRelations_100.png";
+import ServicesPublicRelations from "../../images/Services_PublicRelations_100.png";
 
-import ServicesSEO from "../images/Services_SEO_100.png";
+import ServicesSEO from "../../images/Services_SEO_100.png";
 
-import ServicesPaidSocial from "../images/Services_PaidSocial_100.png";
+import ServicesPaidSocial from "../../images/Services_PaidSocial_100.png";
 
-import SvgCodeFromOnlineEditor from "../images/SVG-Code-from-Online-Editor.svg";
+import SvgCodeFromOnlineEditor from "../../images/SVG-Code-from-Online-Editor.svg";
 
-import TheCurrentStateOfTheFashion from "../images/The-Current-State-of-the-Fashion-Industry-Resource-240x300.png";
+import TheCurrentStateOfTheFashion from "../../images/The-Current-State-of-the-Fashion-Industry-Resource-240x300.png";
 
-import Tpc240x300 from "../images/tpc-240x300.png";
+import Tpc240x300 from "../../images/tpc-240x300.png";
 
-import WebContentAuditNextStepsAssess from "../images/WebContent_AuditNextSteps_AssemblingTeam_100.png";
+import WebContentAuditNextStepsAssess from "../../images/WebContent_AuditNextSteps_AssemblingTeam_100.png";
 
-import WebContentAuditNextStepsStrat from "../images/WebContent_AuditNextSteps_StrategyProposal_100.png";
+import WebContentAuditNextStepsStrat from "../../images/WebContent_AuditNextSteps_StrategyProposal_100.png";
 
-import WebContentTestimonials from "../images/WebContent_Testimonials_100.png";
+import WebContentTestimonials from "../../images/WebContent_Testimonials_100.png";
 
-import WebContentWebinar from "../images/WebContent_Webinar_100.png";
+import WebContentWebinar from "../../images/WebContent_Webinar_100.png";
 
-import ServiceCommunityManagement from "../images/Service_CommunityManagement_100.png";
+import ServiceCommunityManagement from "../../images/Service_CommunityManagement_100.png";
 
-import ServicePpc from "../images/Service_PPC_100.png";
+import ServicePpc from "../../images/Service_PPC_100.png";
 
-import ServiceAmazonMarketing from "../images/Services_AmazonMarketing_100.png";
+import ServiceAmazonMarketing from "../../images/Services_AmazonMarketing_100.png";
 
-import ServicesContentMarketing from "../images/Services_ContentMarketing_100-1.png";
+import ServicesContentMarketing from "../../images/Services_ContentMarketing_100-1.png";
 
-import ServicesCro from "../images/Services_CRO_100.png";
+import ServicesCro from "../../images/Services_CRO_100.png";
 
-import ServicesEmailMarketing from "../images/Services_EmailMarketing_100.png";
+import ServicesEmailMarketing from "../../images/Services_EmailMarketing_100.png";
 
-import NovaMachineLearning from "../images/Nova_MachineLearning-_100.png";
+import NovaMachineLearning from "../../images/Nova_MachineLearning-_100.png";
 
-import NovaScale from "../images/Nova_Scale_100-1.png";
+import NovaScale from "../../images/Nova_Scale_100-1.png";
 
-import FaviconSvg from "../images/favicon1.svg";
+import FaviconSvg from "../../images/favicon1.svg";
 
-import GeneralPowerDigitalMission100 from "../images/General_PowerDigital_Mission_100.png";
+import GeneralPowerDigitalMission100 from "../../images/General_PowerDigital_Mission_100.png";
 
-import GeneralPowerDigitalValues100 from "../images/General_PowerDigital_Values_100.png";
+import GeneralPowerDigitalValues100 from "../../images/General_PowerDigital_Values_100.png";
 
-import GeneralUse2100 from "../images/GeneralUse_2_100.png";
+import GeneralUse2100 from "../../images/GeneralUse_2_100.png";
 
-import GeneralUse5100 from "../images/GeneralUse_5_100.png";
+import GeneralUse5100 from "../../images/GeneralUse_5_100.png";
 
-import GeneralUse7100 from "../images/GeneralUse_7_100.png";
+import GeneralUse7100 from "../../images/GeneralUse_7_100.png";
 
-import GeneralUse9100 from "../images/GeneralUse_9_100.png";
+import GeneralUse9100 from "../../images/GeneralUse_9_100.png";
 
 import Image from "next/image";
 
@@ -910,7 +910,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                     <li className="mega-menu-item">
                       <a href="/resources/" aria-label="Go to Downloadables page">
                         <div className="text">
-                          <h4>Downloadables</h4>
+                          <h4>Downloadables </h4>
                           <p />
                         </div>
                       </a>
@@ -929,7 +929,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
             </div>
           </a>
           <div className="notifications-wrapper">
-            <div className="notification-number hide-notifications">
+            <div className="notification-number ">
               <span>2</span>
             </div>
             <div className="notification-bell">

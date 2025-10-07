@@ -18,11 +18,11 @@ import 'swiper/css';
 // Placeholder variables need to be valid image sources/objects. 
 // Assuming the file is named b6bc2835-dd5e-42f4-aab4-0f1283492d0b-1024x683.png
 // in a sibling 'images' folder. Adjust the path as necessary for your project structure.
-import B6bc2835Off1283 from '../images/b6bc2835-dd5e-42f4-aab4-0f1283492d0b-1024x683.png'; 
-import FoodBeverage from '../images/food-beverage.png'; // Update path/file name
-import Screenshot2025 from '../images/Screenshot-2025-09-22-at-12.36.56-AM-1024x750.png'; // Update path/file name
-import RevenueFashion from '../images/RevenueFashion-1024x683.jpg'; // Update path/file name
-import InfluencerMarketing from '../images/influencer-marketing-1024x683.jpg'; // Update path/file name
+import B6bc2835Off1283 from '../../images/b6bc2835-dd5e-42f4-aab4-0f1283492d0b-1024x683.png'; // Update path/file name
+import FoodBeverage from '../../images/food-beverage.png'; // Update path/file name
+import Screenshot2025 from '../../images/Screenshot-2025-09-22-at-12.36.56-AM-1024x750.png'; // Update path/file name
+import RevenueFashion from '../../images/RevenueFashion-1024x683.jpg'; // Update path/file name
+import InfluencerMarketing from '../../images/influencer-marketing-1024x683.jpg'; // Update path/file name
 // ====================================================================================
 
 
