@@ -1,0 +1,170 @@
+@import "tailwindcss";
+
+/* src/app/globals.css or src/app/style.css */
+
+@font-face {
+  font-family: 'MyCustomFont'; /* Give your font a recognizable name */
+  src: url('../fonts/0Dbf5fb5ae5f0106803f.woff') format('woff'),
+       url('../fonts/c76bf914b71b70d7de95.eot') format('embedded-opentype'),
+       url('../fonts/fcd3d7597d60ffcb290e.ttf') format('truetype');
+  /* Add more @font-face blocks for different weights (e.g., 'MyCustomFont Bold') */
+}
+.icon-arrow-up-right:before {
+  font-family: 'MyCustomFont' !important;
+  content: "\e912"; /* or whatever your demo HTML shows for the arrow-up-right */
+}
+.icon-chevron-right:before {
+    font-family: 'MyCustomFont', sans-serif !important;
+    content: "\e911"; /* This is the hex value for "" */
+}
+.icon-arrow-right:before {
+    font-family: 'MyCustomFont', sans-serif !important;
+    content: "\e913";
+}
+.icon-arrow-left:before {
+  font-family: 'MyCustomFont', sans-serif !important;
+    content: "\e913";
+}
+
+.header .navbar-container .nav .nav-item.has-mega-menu .mega-menu .content-glosary {
+    display: block !important;
+}
+
+.pin-spacer{
+  height: 1856px !important;
+}
+.data-driven-insight {
+  z-index: 60;
+}
+.dual-layout-section{
+  z-index: 60;
+}
+.header {
+  z-index: 700 !important;
+}
+.hero--home__name{
+  z-index: 1001 !important;
+}
+.fghdrhdtryhr5{
+  z-index: 1001 !important;
+}
+/* .navbar-container{
+  background-color: #f4f4f7;
+} */
+
+
+
+/* section:before {
+  height: 0px !important;
+} */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s, transform 0.7s cubic-bezier(0.4,0.6,0.2,1);
+}
+.fade-in-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+.mobile-menu {
+  display: none;
+}
+.mobile-menu.open {
+  display: block;
+}
+
+@media (max-width: 990px) {
+  .pin-spacer{
+  height: 356px !important;
+  width: 100vw !important;
+  }
+    .hero--home {
+    width: 100vw !important;
+    height: 400px !important;
+    background: #f8f8f8;
+    position: relative;
+    z-index: 51;
+    padding: 20px 20px 40px !important;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    position: relative !important;
+  }
+.blog-card-grid{
+  max-width: 100% !important;
+}
+.blog-card-grid__item,
+.swiper-slide {
+  height: auto !important;
+}
+.header.menu-open-state .nav-container {
+        opacity: 1 !important;
+        visibility: visible !important; 
+        transform: none !important;
+          width: 100% !important;
+      }
+.header .navbar-container .nav-container {
+  width: 100% !important;
+}
+.card-blog {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-blog__content {
+  flex-grow: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+.hero--home__name {
+ display: none !important;
+}
+
+.hero--home__content-video {
+  position: relative !important;
+  width: 100% !important;
+  max-width: 455px;
+  height: auto !important;
+  background-color: #000;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0px !important;
+  right: 0px !important;
+}
+
+.hero--home__content-video iframe,
+.hero--home__content-video video,
+.hero--home__content-video .hero--home__video {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 10px;
+  background: #000;
+}
+
+.hero--home__text {
+  width: 100%;
+  max-width: 455px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.heading-medium {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 1.2rem;
+  color: #232323;
+  font-weight: 600;
+  margin: 0;
+}
+}
