@@ -1,6 +1,5 @@
 "use server";
 
-import { HiArrowUpRight } from 'react-icons/hi2';
 
 interface HeroSectionData {
     badge: string;
@@ -37,8 +36,8 @@ const HeroSection = ({ data }: HeroSectionProps) => {
                         className="btn btn-secondary"
                     >
                         <div className="icon">
-                            <span style={{ marginRight: 5 }}>{data.buttonText}</span>
-                            <HiArrowUpRight size={16} style={{ strokeWidth: 2 }} />
+                            <span>{data.buttonText}</span>
+                            <i className="icon-arrow-up-right"></i>
                         </div>
                     </a>
                 </div>

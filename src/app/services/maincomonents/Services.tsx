@@ -1,6 +1,4 @@
-"use server";
-
-import { HiArrowUpRight } from 'react-icons/hi2';
+"use server"
 
 interface ServiceItem {
     title: string;
@@ -11,6 +9,7 @@ interface ServicesData {
     badge: string;
     title: string;
     description: string;
+    description2?: string;
     showButton?: boolean;
     buttonText?: string;
     buttonUrl?: string;
@@ -73,14 +72,22 @@ const Services = ({ data }: ServicesProps) => {
                             {data.description}
                         </span>
                     </p>
+                    {data.description2 && (
+                        <p>
+                            <span style={{ fontWeight: 400 }}>
+                                {data.description2}
+                            </span>
+                        </p>
+                    )}
                     {data.showButton && data.buttonText && data.buttonUrl && (
                         <a
                             href={data.buttonUrl}
                             className="btn btn-secondary"
                         >
                             <div className="icon">
-                                <span style={{ marginRight: 5 }}>{data.buttonText}</span>
-                                <HiArrowUpRight size={16} style={{ strokeWidth: 2 }} />
+                                <span>{data.buttonText}</span>
+                                {/* <HiArrowUpRight size={16} style={{ strokeWidth: 2 }} /> */}
+                                <i className="icon-arrow-up-right"></i>
                             </div>
                         </a>
                     )}

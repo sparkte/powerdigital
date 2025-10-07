@@ -14,6 +14,7 @@ interface CardData {
     text: string;
     url: string;
   }>;
+  actionUrl?: string;
 }
 
 interface CardsliderProps {
@@ -184,14 +185,14 @@ const Cardslider = ({ data }: CardsliderProps) => {
                 .swiper-wrapper:active {
                     cursor: grabbing !important;
                 }
-                
-                
+
             `}</style>
       <div className="digital-marketing-overview__carousel ">
         <span className="badge rounded-pill mt-5 bg-light" />
         <div className="slider">
           <div className="swiper-container swiper-slider-0 swiper-initialized swiper-horizontal swiper-backface-hidden">
             <div
+
               className="swiper-wrapper custom-scrollbar-hidden"
               ref={sliderRef}
               onScroll={handleScroll}
@@ -227,6 +228,7 @@ const Cardslider = ({ data }: CardsliderProps) => {
                 gap: '0px',
                 paddingRight: '24px',
                 cursor: 'grab'
+
               }}
             >
               {data && data.map((card, index) => (
@@ -234,10 +236,11 @@ const Cardslider = ({ data }: CardsliderProps) => {
                   key={card.id}
                   className={`swiper-slide swiper-slide--manual_services_cards ${index === 0 ? 'swiper-slide-active' : index === 1 ? 'swiper-slide-next' : ''}`}
                   style={{
-                    width: "363.111px",
+                    // width: "460px",
                     marginRight: 24,
                     flexShrink: 0,
-                    scrollSnapAlign: 'start'
+                    scrollSnapAlign: 'start',
+                    maxWidth: '460px'
                   }}
                 >
                   <article className={`card-slider ${card.bgColor}`}>
@@ -266,6 +269,15 @@ const Cardslider = ({ data }: CardsliderProps) => {
                         ))}
                       </div>
                     </div>
+                    {card.actionUrl && (
+                      <div className="card-slider__action">
+                        <a href={card.actionUrl} className="btn btn--round btn-light stretched-link">
+                          <div className="icon">
+                            <i className="icon-arrow-up-right"></i>
+                          </div>
+                        </a>
+                      </div>
+                    )}
                   </article>
                 </div>
               ))}
@@ -324,6 +336,7 @@ const Cardslider = ({ data }: CardsliderProps) => {
                 </svg>
               </div>
             </div>
+            
           </div>
         </div>
       </div>

@@ -1,7 +1,5 @@
 "use server";
 
-import { HiArrowUpRight } from 'react-icons/hi2';
-
 interface ContentItem {
   type: 'paragraph' | 'list' | 'bullet_points';
   content: string | string[];
@@ -82,8 +80,10 @@ const WhySection = ({ data }: WhySectionProps) => {
                                 className="btn btn-secondary mt-4 d-none d-md-inline-block"
                             >
                                 <div className="icon">
-                                    <span style={{ marginRight: 5 }}>{data.buttonText}</span>
-                                    <HiArrowUpRight size={16} style={{ strokeWidth: 2 }} />
+                                    <span>{data.buttonText}</span>
+                                    {/* <HiArrowUpRight size={16} style={{ strokeWidth: 2 }} /> */}
+                                    {/* <HiArrowUpRight size={16} style={{ strokeWidth: 2 }} /> */}
+                                    <i className="icon-arrow-up-right"></i>
                                 </div>
                             </a>
                         </div>
@@ -99,8 +99,9 @@ const WhySection = ({ data }: WhySectionProps) => {
                                 className="btn btn-secondary mt-4 d-md-none"
                             >
                                 <div className="icon">
-                                    <span style={{ marginRight: 5 }}>{data.buttonText}</span>
-                                    <HiArrowUpRight size={16} style={{ strokeWidth: 2 }} />
+                                    <span>{data.buttonText}</span>
+                                    {/* <HiArrowUpRight size={16} style={{ strokeWidth: 2 }} /> */}
+                                    <i className="icon-arrow-up-right"></i>
                                 </div>
                             </a>
                         </div>
