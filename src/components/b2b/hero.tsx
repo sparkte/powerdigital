@@ -1,5 +1,5 @@
 import React from 'react'
-import B2B from '../../images/b2b.png'
+import B2B from '../../images/B2B.png'
 export default function hero() {
   return (
     <section className="single-hero bg-light  ">
