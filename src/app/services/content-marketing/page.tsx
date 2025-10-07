@@ -4,7 +4,7 @@
 import ServiceIcon1 from "../amazon-marketing/images/service-icon-1.svg"
 import Layer11 from "../amazon-marketing/images/Layer_1-1.svg"
 import Layer1 from "../amazon-marketing/images/Layer-1.svg"
-import Fullheader from '../../../components/fullheader';
+import Fullheader from '../../../components/consumer/header';
 import Cardslider from '../maincomonents/cardslider';
 import HeroSection from '../maincomonents/herosection';
 import LearnMore from '../maincomonents/learnmore';
@@ -253,7 +253,7 @@ const LearnMoreData = {
 const ContentMarketingPage = () => {
     return (
         <>
-            <Fullheader showLogo={true} />
+            <Fullheader />
             <main>
                 <HeroSection data={HeroSectionData} />
 

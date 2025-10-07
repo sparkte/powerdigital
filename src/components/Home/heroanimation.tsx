@@ -211,7 +211,7 @@ tlUnpinned
       >
         <h1 className="fghdrhdtryhr5">
           <Image
-            ref={logoRef as any}
+            ref={logoRef as React.RefObject<HTMLImageElement>}
             id="hero-logo"
             className="hero--home__name"
             src={PowerSvg}

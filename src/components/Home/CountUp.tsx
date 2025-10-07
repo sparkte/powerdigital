@@ -18,7 +18,7 @@ const CountUp: React.FC<CountUpProps> = ({ end, duration = 1, prefix = "", suffi
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-    let obj = { val: 0 };
+    const obj = { val: 0 };
 
     const tween = gsap.to(obj, {
       val: end,

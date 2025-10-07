@@ -45,7 +45,7 @@ export default function Solution() {
           <h2>Solution Partners</h2>
           <p>
             <span style={{ fontWeight: 400 }}>
-              We work with dozens of partners to ensure our clients' success,
+              We work with dozens of partners to ensure our clients&apos; success,
               including:
             </span>
           </p>

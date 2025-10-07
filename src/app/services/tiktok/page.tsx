@@ -1,7 +1,7 @@
 "use server"
 
 
-import Fullheader from '../../../components/fullheader';
+import Fullheader from '../../../components/consumer/header';
 import Cardslider from '../maincomonents/cardslider';
 import HeroSection from '../maincomonents/herosection';
 import LearnMore from '../maincomonents/learnmore';
@@ -210,7 +210,7 @@ const LearnMoreData = {
 const TiktokPage = () => {
     return (
         <>
-            <Fullheader showLogo={true} />
+            <Fullheader  />
             <main>
                 <HeroSection data={HeroSectionData} />
 

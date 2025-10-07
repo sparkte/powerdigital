@@ -116,7 +116,7 @@ export default function Client() {
     return (
         <section className="logo-carousel bg-light">
             <div className="logo-carousel__title">
-                <h2>We've helped clients become industry leaders</h2>
+                <h2>We&apos;ve helped clients become industry leaders</h2>
             </div>
             
             <div className="logo-carousel-content">

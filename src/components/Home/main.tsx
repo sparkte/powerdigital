@@ -51,7 +51,7 @@ const logos = [
   AlliantPdm,
   // Repeat logos as needed for the marquee effect
 ];
-export default function main() {
+export default function Main() {
     const [showNavbarLogo, setShowNavbarLogo] = useState(false);
 
   return (

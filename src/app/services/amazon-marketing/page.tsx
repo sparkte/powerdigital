@@ -5,7 +5,7 @@ import ServiceIcon1 from "./images/service-icon-1.svg"
 import Layer11 from "./images/Layer_1-1.svg"
 import Layer1 from "./images/Layer-1.svg"
 import Amazon1 from "./images/Amazon-1.png"
-import Fullheader from '../../../components/fullheader';
+import Header from '../../../components/consumer/header';
 import Cardslider from '../maincomonents/cardslider';
 import HeroSection from '../maincomonents/herosection';
 import LearnMore from '../maincomonents/learnmore';
@@ -252,7 +252,7 @@ const amazonCardSliderData = [
 const AmazonMarketingPage = () => {
   return (
     <>
-      <Fullheader showLogo={true} />
+      <Header  />
       <main>
         <HeroSection data={amazonHeroSectionData} />
 
