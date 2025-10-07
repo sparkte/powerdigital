@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: 'MyCustomFont'; /* Give your font a recognizable name */
-  src: url('../fonts/0Dbf5fb5ae5f0106803f.woff') format('woff'),
+  src: url('../fonts/0dbf5fb5ae5f0106803f.woff') format('woff'),
        url('../fonts/c76bf914b71b70d7de95.eot') format('embedded-opentype'),
        url('../fonts/fcd3d7597d60ffcb290e.ttf') format('truetype');
   /* Add more @font-face blocks for different weights (e.g., 'MyCustomFont Bold') */
