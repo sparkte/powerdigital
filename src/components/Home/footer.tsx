@@ -4,6 +4,7 @@ import FadeUp from "./FadeUp";
 export default function footer() {
   return (
     <>
+    
     <footer className="footer">
     <section className="interested-form">
       <div className="container">
