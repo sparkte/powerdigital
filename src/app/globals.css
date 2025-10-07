@@ -26,6 +26,9 @@
     content: "\e913";
 }
 
+.header .navbar-container .nav .nav-item.has-mega-menu .mega-menu .content-glosary {
+    display: block !important;
+}
 
 .pin-spacer{
   height: 1856px !important;
