@@ -124,7 +124,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                  on mobile as well, but this step focuses on the main burger toggle. */}
               <a
                 className="nav-link"
-                href="https://powerdigitalmarketing.com/approach/"
+                href="/approach/"
                 aria-current="page"
                 aria-expanded="false"
                 aria-label="Open Verticals menu"
@@ -145,7 +145,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                     <span className="icon-arrow-left" />
                   </a>
                   <a
-                    href="https://powerdigitalmarketing.com/approach/"
+                    href="/approach/"
                     className="mega-menu-parent-link"
                     aria-label="Go to Verticals page"
                   >
@@ -154,7 +154,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                   <ul className="mega-menu-list">
                     <li className="mega-menu-item">
                       <a
-                        href="https://powerdigitalmarketing.com/vertical/b2b-marketing/"
+                        href="/b2b"
                         aria-label="Go to B2B page"
                       >
                         <Image
@@ -169,7 +169,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                     </li>
                     <li className="mega-menu-item">
                       <a
-                        href="https://powerdigitalmarketing.com/vertical/consumer-services/"
+                        href="/consumer"
                         aria-label="Go to Consumer Services page"
                       >
                         <Image src={Services_SocialMedia} alt="" />
@@ -181,7 +181,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                     </li>
                     <li className="mega-menu-item">
                       <a
-                        href="https://powerdigitalmarketing.com/vertical/consumer-product-b2c/"
+                        href="/product"
                         aria-label="Go to Consumer Product page"
                       >
                         <Image
@@ -196,7 +196,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                     </li>
                     <li className="mega-menu-item">
                       <a
-                        href="https://powerdigitalmarketing.com/vertical/cpg/"
+                        href="/cpg"
                         aria-label="Go to CPG page"
                       >
                         <Image
@@ -211,7 +211,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                     </li>
                     <li className="mega-menu-item">
                       <a
-                        href="https://powerdigitalmarketing.com/vertical/private-equity/"
+                        href="/private"
                         aria-label="Go to Private Equity page"
                       >
                         <Image src={ServicePpc} alt="" />
@@ -234,7 +234,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
             <li className="nav-item has-mega-menu">
               <a
                 className="nav-link"
-                href="https://powerdigitalmarketing.com/services/"
+                href="/services/"
                 aria-current="page"
                 aria-expanded="false"
                 aria-label="Open Services menu"
@@ -254,7 +254,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                     <span className="icon-arrow-left" />
                   </a>
                   <a
-                    href="https://powerdigitalmarketing.com/services/"
+                    href="/services/"
                     className="mega-menu-parent-link"
                     aria-label="Go to Services page"
                   >
@@ -263,7 +263,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                   <ul className="menu-glosary">
                     <li className="menu-glosary__item">
                       <a
-                        href="https://powerdigitalmarketing.com/blog/services-category/growth-marketing/"
+                        href="/services/growth-marketing/"
                         aria-label="Go to Growth Marketing page"
                       >
                         <p className="title">Growth Marketing</p>
@@ -274,7 +274,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                     </li>
                     <li className="menu-glosary__item">
                       <a
-                        href="https://powerdigitalmarketing.com/blog/services-category/data-intelligence/"
+                        href="/services/data-intelligence/"
                         aria-label="Go to Data Intelligence page"
                       >
                         <p className="title">Data Intelligence</p>
@@ -285,7 +285,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                     </li>
                     <li className="menu-glosary__item">
                       <a
-                        href="https://powerdigitalmarketing.com/blog/services-category/consulting/"
+                        href="/services/consulting/"
                         aria-label="Go to Consulting page"
                       >
                         <p className="title">Consulting</p>
@@ -296,7 +296,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                     </li>
                     <li className="menu-glosary__item">
                       <a
-                        href="https://powerdigitalmarketing.com/blog/services-category/creative/"
+                        href="/services/creative/"
                         aria-label="Go to Creative page"
                       >
                         <p className="title">Creative</p>
@@ -330,7 +330,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                               data-bs-toggle="tooltip"
                               data-bs-placement="top"
                               title="Unlock growth with Amazon’s power."
-                              href="https://powerdigitalmarketing.com/services/amazon-marketing/"
+                              href="/services/amazon-marketing/"
                             >
                               <Image
                                 src={ServiceAmazonMarketing}
@@ -347,7 +347,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                               data-bs-toggle="tooltip"
                               data-bs-placement="top"
                               title="Drive results with TikTok strategies."
-                              href="https://powerdigitalmarketing.com/services/tiktok/"
+                              href="/services/tiktok/"
                             >
                               <Image src={ServicePpc} alt="" />
                               <div className="text">
@@ -361,7 +361,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                               data-bs-toggle="tooltip"
                               data-bs-placement="top"
                               title="Boost awareness with impactful media."
-                              href="https://powerdigitalmarketing.com/services/programmatic-advertising-agency/"
+                              href="/services/programmatic-advertising-agency/"
                             >
                               <Image
                                 src={GeneralPowerDigitalMission100}
@@ -378,7 +378,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                               data-bs-toggle="tooltip"
                               data-bs-placement="top"
                               title="Convert new audiences through social."
-                              href="https://powerdigitalmarketing.com/services/paid-social-media/"
+                              href="/services/paid-social-media/"
                             >
                               <Image
                                 src={ServicesPaidSocial}
@@ -395,7 +395,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                               data-bs-toggle="tooltip"
                               data-bs-placement="top"
                               title="Capture traffic, eliminate wasted spend."
-                              href="https://powerdigitalmarketing.com/services/paid-media/"
+                              href="/services/paid-media/"
                             >
                               <Image
                                 src={ServicesSocialMedia}
@@ -417,7 +417,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                               data-bs-toggle="tooltip"
                               data-bs-placement="top"
                               title="Build buzz and maximize brand awareness."
-                              href="https://powerdigitalmarketing.com/services/public-relations/"
+                              href="/services/public-relations/"
                             >
                               <Image
                                 src={ServicesPublicRelations}
@@ -434,7 +434,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                               data-bs-toggle="tooltip"
                               data-bs-placement="top"
                               title="Expand reach with affiliate programs."
-                              href="https://powerdigitalmarketing.com/services/affiliate-marketing/"
+                              href="/services/affiliate-marketing/"
                             >
                               <Image
                                 src={WebContentWebinar}
@@ -451,7 +451,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                               data-bs-toggle="tooltip"
                               data-bs-placement="top"
                               title="Leverage trusted voices to build credibility."
-                              href="https://powerdigitalmarketing.com/services/influencer-marketing/"
+                              href="/services/influencer-marketing/"
                             >
                               <Image
                                 src={Services_InfluencerOutreach}
@@ -475,7 +475,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                               data-bs-toggle="tooltip"
                               data-bs-placement="top"
                               title="Grow traffic where users shop."
-                              href="https://powerdigitalmarketing.com/services/seo/"
+                              href="/services/seo/"
                             >
                               <Image src={ServicesSEO} alt="" />
                               <div className="text">
@@ -489,7 +489,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                               data-bs-toggle="tooltip"
                               data-bs-placement="top"
                               title="Retain customers, expand lifetime value."
-                              href="https://powerdigitalmarketing.com/services/email-marketing/"
+                              href="/services/email-marketing/"
                             >
                               <Image
                                 src={ServicesEmailMarketing}
@@ -506,7 +506,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                               data-bs-toggle="tooltip"
                               data-bs-placement="top"
                               title="Engage customers at every journey stage."
-                              href="https://powerdigitalmarketing.com/services/content-marketing/"
+                              href="/services/content-marketing/"
                             >
                               <Image
                                 src={ServicesContentMarketing}
@@ -523,7 +523,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                               data-bs-toggle="tooltip"
                               data-bs-placement="top"
                               title="Connect authentically through social media."
-                              href="https://powerdigitalmarketing.com/services/organic-social-media/"
+                              href="/services/organic-social-media/"
                             >
                               <Image
                                 src={Services_SocialMedia}
@@ -540,7 +540,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                               data-bs-toggle="tooltip"
                               data-bs-placement="top"
                               title="Make your brand visible across AI search."
-                              href="https://powerdigitalmarketing.com/services/generative-engine-optimization-geo-services/"
+                              href="/services/generative-engine-optimization-geo-services/"
                             >
                               <Image
                                 src={ServiceCommunityManagement}
@@ -557,7 +557,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                               data-bs-toggle="tooltip"
                               data-bs-placement="top"
                               title="Maximize conversions with website optimization."
-                              href="https://powerdigitalmarketing.com/services/cro-conversion-rate-optimization/"
+                              href="/services/cro-conversion-rate-optimization/"
                             >
                               <Image src={ServicesCro} alt="" />
                               <div className="text">
@@ -580,7 +580,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                         <div>
                           <a
                             className="variant-item"
-                            href="https://powerdigitalmarketing.com/data-intelligence-company/"
+                            href="/data-intelligence-company/"
                           >
                             <Image src={NovaReport} alt="" />
                             <div className="text">
@@ -595,7 +595,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                         <div>
                           <a
                             className="variant-item"
-                            href="https://powerdigitalmarketing.com/data-infrastructure-cdps/"
+                            href="/data-infrastructure-cdps/"
                           >
                             <Image src={GeneralUse9100} alt="" />
                             <div className="text">

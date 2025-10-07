@@ -109,7 +109,7 @@ export default function Header() {
                         <li className="nav-item has-mega-menu">
                             <a
                                 className="nav-link"
-                                href="https://powerdigitalmarketing.com/approach/"
+                                href="/approach/"
                                 aria-current="page"
                                 aria-expanded="false"
                                 aria-label="Open Verticals menu"
@@ -129,7 +129,7 @@ export default function Header() {
                                         <span className="icon-arrow-left" />
                                     </a>
                                     <a
-                                        href="https://powerdigitalmarketing.com/approach/"
+                                        href="/approach/"
                                         className="mega-menu-parent-link"
                                         aria-label="Go to Verticals page"
                                     >
@@ -138,7 +138,7 @@ export default function Header() {
                                     <ul className="mega-menu-list">
                                         <li className="mega-menu-item">
                                             <a
-                                                href="https://powerdigitalmarketing.com/vertical/b2b-marketing/"
+                                                href="/b2b"
                                                 aria-label="Go to B2B page"
                                             >
                                                 <Image
@@ -153,7 +153,7 @@ export default function Header() {
                                         </li>
                                         <li className="mega-menu-item">
                                             <a
-                                                href="https://powerdigitalmarketing.com/vertical/consumer-services/"
+                                                href="/consumer/"
                                                 aria-label="Go to Consumer Services page"
                                             >
                                                 <Image src={Services_SocialMedia} alt="" />
@@ -165,7 +165,7 @@ export default function Header() {
                                         </li>
                                         <li className="mega-menu-item">
                                             <a
-                                                href="https://powerdigitalmarketing.com/vertical/consumer-product-b2c/"
+                                                href="/product/"
                                                 aria-label="Go to Consumer Product page"
                                             >
                                                 <Image
@@ -180,7 +180,7 @@ export default function Header() {
                                         </li>
                                         <li className="mega-menu-item">
                                             <a
-                                                href="https://powerdigitalmarketing.com/vertical/cpg/"
+                                                href="/cpg/"
                                                 aria-label="Go to CPG page"
                                             >
                                                 {/* Note: Original code used a .svg, replaced with an imported one, but Next.js <Image> needs a width/height for non-SVG imports. Keeping as original image usage for now if it's an inline SVG, but treating it as a standard import based on your list. */}
@@ -196,7 +196,7 @@ export default function Header() {
                                         </li>
                                         <li className="mega-menu-item">
                                             <a
-                                                href="https://powerdigitalmarketing.com/vertical/private-equity/"
+                                                href="/private/"
                                                 aria-label="Go to Private Equity page"
                                             >
                                                 <Image src={ServicePpc} alt="" />
@@ -219,7 +219,7 @@ export default function Header() {
                         <li className="nav-item has-mega-menu">
                             <a
                                 className="nav-link"
-                                href="https://powerdigitalmarketing.com/services/"
+                                href="/services/"
                                 aria-current="page"
                                 aria-expanded="false"
                                 aria-label="Open Services menu"
@@ -239,7 +239,7 @@ export default function Header() {
                                         <span className="icon-arrow-left" />
                                     </a>
                                     <a
-                                        href="https://powerdigitalmarketing.com/services/"
+                                        href="/services/"
                                         className="mega-menu-parent-link"
                                         aria-label="Go to Services page"
                                     >
@@ -248,7 +248,7 @@ export default function Header() {
                                     <ul className="menu-glosary">
                                         <li className="menu-glosary__item">
                                             <a
-                                                href="https://powerdigitalmarketing.com/blog/services-category/growth-marketing/"
+                                                href="/services-category/growth-marketing/"
                                                 aria-label="Go to Growth Marketing page"
                                             >
                                                 <p className="title">Growth Marketing</p>
@@ -259,7 +259,7 @@ export default function Header() {
                                         </li>
                                         <li className="menu-glosary__item">
                                             <a
-                                                href="https://powerdigitalmarketing.com/blog/services-category/data-intelligence/"
+                                                href="/services-category/data-intelligence/"
                                                 aria-label="Go to Data Intelligence page"
                                             >
                                                 <p className="title">Data Intelligence</p>
@@ -270,7 +270,7 @@ export default function Header() {
                                         </li>
                                         <li className="menu-glosary__item">
                                             <a
-                                                href="https://powerdigitalmarketing.com/blog/services-category/consulting/"
+                                                href="/services-category/consulting/"
                                                 aria-label="Go to Consulting page"
                                             >
                                                 <p className="title">Consulting</p>
@@ -281,7 +281,7 @@ export default function Header() {
                                         </li>
                                         <li className="menu-glosary__item">
                                             <a
-                                                href="https://powerdigitalmarketing.com/blog/services-category/creative/"
+                                                href="/services-category/creative/"
                                                 aria-label="Go to Creative page"
                                             >
                                                 <p className="title">Creative</p>
@@ -315,7 +315,7 @@ export default function Header() {
                                                             data-bs-toggle="tooltip"
                                                             data-bs-placement="top"
                                                             title="Unlock growth with Amazon’s power."
-                                                            href="https://powerdigitalmarketing.com/services/amazon-marketing/"
+                                                            href="/services/amazon-marketing/"
                                                         >
                                                             <Image
                                                                 src={ServiceAmazonMarketing}
@@ -332,7 +332,7 @@ export default function Header() {
                                                             data-bs-toggle="tooltip"
                                                             data-bs-placement="top"
                                                             title="Drive results with TikTok strategies."
-                                                            href="https://powerdigitalmarketing.com/services/tiktok/"
+                                                            href="/services/tiktok/"
                                                         >
                                                             <Image src={ServicePpc} alt="" />
                                                             <div className="text">
@@ -346,7 +346,7 @@ export default function Header() {
                                                             data-bs-toggle="tooltip"
                                                             data-bs-placement="top"
                                                             title="Boost awareness with impactful media."
-                                                            href="https://powerdigitalmarketing.com/services/programmatic-advertising-agency/"
+                                                            href="/services/programmatic-advertising-agency/"
                                                         >
                                                             <Image
                                                                 src={GeneralPowerDigitalMission100}
@@ -363,7 +363,7 @@ export default function Header() {
                                                             data-bs-toggle="tooltip"
                                                             data-bs-placement="top"
                                                             title="Convert new audiences through social."
-                                                            href="https://powerdigitalmarketing.com/services/paid-social-media/"
+                                                            href="/services/paid-social-media/"
                                                         >
                                                             <Image
                                                                 src={ServicesPaidSocial}
@@ -380,7 +380,7 @@ export default function Header() {
                                                             data-bs-toggle="tooltip"
                                                             data-bs-placement="top"
                                                             title="Capture traffic, eliminate wasted spend."
-                                                            href="https://powerdigitalmarketing.com/services/paid-media/"
+                                                            href="/services/paid-media/"
                                                         >
                                                             <Image
                                                                 src={ServicesSocialMedia}
@@ -402,7 +402,7 @@ export default function Header() {
                                                             data-bs-toggle="tooltip"
                                                             data-bs-placement="top"
                                                             title="Build buzz and maximize brand awareness."
-                                                            href="https://powerdigitalmarketing.com/services/public-relations/"
+                                                            href="/services/public-relations/"
                                                         >
                                                             <Image
                                                                 src={ServicesPublicRelations}
@@ -419,7 +419,7 @@ export default function Header() {
                                                             data-bs-toggle="tooltip"
                                                             data-bs-placement="top"
                                                             title="Expand reach with affiliate programs."
-                                                            href="https://powerdigitalmarketing.com/services/affiliate-marketing/"
+                                                            href="/services/affiliate-marketing/"
                                                         >
                                                             <Image
                                                                 src={WebContentWebinar}
@@ -436,7 +436,7 @@ export default function Header() {
                                                             data-bs-toggle="tooltip"
                                                             data-bs-placement="top"
                                                             title="Leverage trusted voices to build credibility."
-                                                            href="https://powerdigitalmarketing.com/services/influencer-marketing/"
+                                                            href="/services/influencer-marketing/"
                                                         >
                                                             <Image
                                                                 src={Services_InfluencerOutreach}
@@ -460,7 +460,7 @@ export default function Header() {
                                                             data-bs-toggle="tooltip"
                                                             data-bs-placement="top"
                                                             title="Grow traffic where users shop."
-                                                            href="https://powerdigitalmarketing.com/services/seo/"
+                                                            href="/services/seo/"
                                                         >
                                                             <Image src={ServicesSEO} alt="" />
                                                             <div className="text">
@@ -474,7 +474,7 @@ export default function Header() {
                                                             data-bs-toggle="tooltip"
                                                             data-bs-placement="top"
                                                             title="Retain customers, expand lifetime value."
-                                                            href="https://powerdigitalmarketing.com/services/email-marketing/"
+                                                            href="/services/email-marketing/"
                                                         >
                                                             <Image
                                                                 src={ServicesEmailMarketing}
@@ -491,7 +491,7 @@ export default function Header() {
                                                             data-bs-toggle="tooltip"
                                                             data-bs-placement="top"
                                                             title="Engage customers at every journey stage."
-                                                            href="https://powerdigitalmarketing.com/services/content-marketing/"
+                                                            href="/services/content-marketing/"
                                                         >
                                                             <Image
                                                                 src={ServicesContentMarketing}
@@ -508,7 +508,7 @@ export default function Header() {
                                                             data-bs-toggle="tooltip"
                                                             data-bs-placement="top"
                                                             title="Connect authentically through social media."
-                                                            href="https://powerdigitalmarketing.com/services/organic-social-media/"
+                                                            href="/services/organic-social-media/"
                                                         >
                                                             <Image
                                                                 src={Services_SocialMedia}
@@ -525,7 +525,7 @@ export default function Header() {
                                                             data-bs-toggle="tooltip"
                                                             data-bs-placement="top"
                                                             title="Make your brand visible across AI search."
-                                                            href="https://powerdigitalmarketing.com/services/generative-engine-optimization-geo-services/"
+                                                            href="/services/generative-engine-optimization-geo-services/"
                                                         >
                                                             <Image
                                                                 src={ServiceCommunityManagement}
@@ -542,7 +542,7 @@ export default function Header() {
                                                             data-bs-toggle="tooltip"
                                                             data-bs-placement="top"
                                                             title="Maximize conversions with website optimization."
-                                                            href="https://powerdigitalmarketing.com/services/cro-conversion-rate-optimization/"
+                                                            href="/services/cro-conversion-rate-optimization/"
                                                         >
                                                             <Image src={ServicesCro} alt="" />
                                                             <div className="text">
