@@ -32,6 +32,26 @@
 
 .pin-spacer{
   height: 1856px !important;
+  margin: 0px auto !important;
+}
+@media (min-width: 1468px) {
+  .pin-spacer {
+    top: 12px ;        /* between 10–15px, adjust as needed */
+    left: auto !important;
+    /* Optional: for centering */
+    margin-left: auto !important;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1540px) {
+  .pin-spacer {
+    height: calc(1856px + (100vw - 1540px)) !important;
+    /* This means for example:
+      - At 1540px: 1856px
+      - At 1600px: 1856px + (1600px - 1540px) = 1916px
+      - At 1800px: 1856px + (1800px - 1540px) = 2116px
+    */
+  }
 }
 .data-driven-insight {
   z-index: 60;

@@ -25,7 +25,12 @@ const HeroAnimation: React.FC<HeroAnimationProps> = ({ PowerSvg, onHeroLogoHide 
     const video = videoRef.current;
     const text = textRef.current;
     if (!wrapper || !logo || !video || !text) return;
-    
+
+        const computeY = () => {
+      if (window.innerWidth < 1540) return 300;
+      return 300 + Math.floor((window.innerWidth - 1540) / 100) * 70;
+    };
+
     if (window.innerWidth < MOBILE_BREAKPOINT) {
     // On mobile: show logo, nav, and text instantly (no animation)
     if (logoRef.current) {
@@ -89,7 +94,7 @@ const HeroAnimation: React.FC<HeroAnimationProps> = ({ PowerSvg, onHeroLogoHide 
         width: "31.8429vw",
         height: "17.0999vw"
       },
-      text: {y: 300, opacity: 1 }
+      text: {y: computeY(), opacity: 1 }
     };
         // Animate page (wrapper) position for hero unpin phase (mid->end)
      const tlUnpinned = gsap.timeline({
@@ -101,9 +106,9 @@ const HeroAnimation: React.FC<HeroAnimationProps> = ({ PowerSvg, onHeroLogoHide 
     
   },
 });
-tlUnpinned
-  .to(video, { ...END.video, position: "absolute" }, 1)
-  .to(text, { ...END.text }, 1);
+// tlUnpinned
+//   .to(video, { ...END.video, position: "absolute" }, 1)
+//   .to(text, { ...END.text }, 1);
 
     // Animation timeline
     const tl = gsap.timeline({
@@ -148,7 +153,10 @@ tlUnpinned
     tl.to(video, { ...MID.video, position: "absolute", opacity: 1 }, "mid");
 // Animate back to visible/focused when crossing mid
 
-
+//     tl.to(text, { 
+//   y: computeY(),
+//   opacity: 1
+// }, 1);
     tl.to(video, { ...END.video, position: "absolute" }, 1);
     tl.to(text, { ...END.text }, 1);
     
@@ -176,6 +184,7 @@ tlUnpinned
       tlUnpinned.scrollTrigger?.kill();
       tlUnpinned.kill();
     };
+    
   }, []);
 
   return (
@@ -193,6 +202,7 @@ tlUnpinned
         padding: "0px 0px 0px",
         overflow: "visible",
         boxSizing: "border-box"
+        
       }}
     >
       <section
@@ -206,7 +216,8 @@ tlUnpinned
           padding: "20.7536px 103.768px 117.11px",
           position: "fixed",
           boxSizing: "border-box",
-          left: 0
+          
+          // left: 0
         }}
       >
         <h1 className="fghdrhdtryhr5">
