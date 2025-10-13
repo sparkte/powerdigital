@@ -3,7 +3,7 @@ import NovaReport from "../../images/Nova_Reporting_100.png";
 import Services_InfluencerOutreach from "../../images/Services_InfluencerOutreach_100-1.png";
 import Services_SocialMedia from "../../images/Services_SocialMedia_100.png";
 // Renamed to avoid clash with other Services_SocialMedia_100.png image import
-import ServicesSocialMedia from "../../images/Services_SocialMedia_100.png"; 
+import ServicesSocialMedia from "../../images/Services_SocialMedia_100.png";
 import ServicesPublicRelations from "../../images/Services_PublicRelations_100.png";
 import ServicesSEO from "../../images/Services_SEO_100.png";
 import ServicesPaidSocial from "../../images/Services_PaidSocial_100.png";
@@ -36,15 +36,38 @@ export default function Header() {
     // 1. State to manage the menu visibility
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+    // 2. State to manage the selected menu item (default: Growth Marketing)
+    const [selectedMenuItem, setSelectedMenuItem] = useState('growth-marketing');
+
     // Function to toggle the menu state
     const toggleMenu = () => {
         setIsMenuOpen(prev => !prev);
+    };
+
+    // Function to handle menu item selection
+    const handleMenuItemClick = (menuItem: string) => {
+        setSelectedMenuItem(menuItem);
     };
 
     // Conditionally apply a class to the header for broader CSS control
     const headerClass = isMenuOpen ? 'header header-home menu-open-state' : 'header header-home';
 
     return (
+        <>
+        <style>
+            {`
+            @media (max-width: 1430px) {
+                .header .navbar-container .nav-container>ul>.has-mega-menu:active .mega-menu, .header .navbar-container .nav-container>ul>.has-mega-menu:focus-visible .mega-menu, .header .navbar-container .nav-container>ul>.has-mega-menu:hover .mega-menu, .header .navbar-container .nav-container>ul>.has-mega-menu:target .mega-menu {
+                    transform: translate(-30%) !important;
+                }
+            }
+            @media (max-width: 992px) {
+                .header .navbar-container .nav-container>ul>.has-mega-menu:active .mega-menu, .header .navbar-container .nav-container>ul>.has-mega-menu:focus-visible .mega-menu, .header .navbar-container .nav-container>ul>.has-mega-menu:hover .mega-menu, .header .navbar-container .nav-container>ul>.has-mega-menu:target .mega-menu {
+                    transform: translateX(0) !important;
+                }
+            }
+            `}
+        </style>
         <header className={headerClass}>
             <div className="top-bar">
                 <a className="d-flex d-md-none" href="/work-with-us/">
@@ -61,7 +84,7 @@ export default function Header() {
                     <i className="icon-arrow-right" />
                 </a>
             </div>
-            <nav className="navbar-container" style={{background: "#f4f4f7"}}>
+            <nav className="navbar-container" style={{ background: "#f4f4f7" }}>
                 <a
                     className="navbar-brand "
                     href="https://powerdigitalmarketing.com"
@@ -101,7 +124,7 @@ export default function Header() {
                         />
                     </svg>
                 </a>
-                
+
                 {/* 2. Apply dynamic class based on state */}
                 <div className={`nav-container ${isMenuOpen ? "is-menu-open" : ""}`}>
                     <span className="title-menu">Menu</span>
@@ -246,10 +269,14 @@ export default function Header() {
                                         <h3>Services</h3>
                                     </a>
                                     <ul className="menu-glosary">
-                                        <li className="menu-glosary__item">
+                                        <li className={`menu-glosary__item ${selectedMenuItem === 'growth-marketing' ? 'active' : ''}`}>
                                             <a
                                                 href="/services-category/growth-marketing/"
                                                 aria-label="Go to Growth Marketing page"
+                                                onClick={(e) => {
+                                                    e.preventDefault();
+                                                    handleMenuItemClick('growth-marketing');
+                                                }}
                                             >
                                                 <p className="title">Growth Marketing</p>
                                                 <p className="description">
@@ -257,10 +284,14 @@ export default function Header() {
                                                 </p>
                                             </a>
                                         </li>
-                                        <li className="menu-glosary__item">
+                                        <li className={`menu-glosary__item ${selectedMenuItem === 'data-intelligence' ? 'active' : ''}`}>
                                             <a
                                                 href="/services-category/data-intelligence/"
                                                 aria-label="Go to Data Intelligence page"
+                                                onClick={(e) => {
+                                                    e.preventDefault();
+                                                    handleMenuItemClick('data-intelligence');
+                                                }}
                                             >
                                                 <p className="title">Data Intelligence</p>
                                                 <p className="description">
@@ -268,10 +299,14 @@ export default function Header() {
                                                 </p>
                                             </a>
                                         </li>
-                                        <li className="menu-glosary__item">
+                                        <li className={`menu-glosary__item ${selectedMenuItem === 'consulting' ? 'active' : ''}`}>
                                             <a
                                                 href="/services-category/consulting/"
                                                 aria-label="Go to Consulting page"
+                                                onClick={(e) => {
+                                                    e.preventDefault();
+                                                    handleMenuItemClick('consulting');
+                                                }}
                                             >
                                                 <p className="title">Consulting</p>
                                                 <p className="description">
@@ -279,10 +314,14 @@ export default function Header() {
                                                 </p>
                                             </a>
                                         </li>
-                                        <li className="menu-glosary__item">
+                                        <li className={`menu-glosary__item ${selectedMenuItem === 'creative' ? 'active' : ''}`}>
                                             <a
                                                 href="/services-category/creative/"
                                                 aria-label="Go to Creative page"
+                                                onClick={(e) => {
+                                                    e.preventDefault();
+                                                    handleMenuItemClick('creative');
+                                                }}
                                             >
                                                 <p className="title">Creative</p>
                                                 <p className="description">
@@ -300,7 +339,7 @@ export default function Header() {
                                         </li>
                                     </ul>
                                     <ul className="content-sub-items">
-                                        <li className="content-glosary">
+                                        <li className={`content-glosary ${selectedMenuItem === 'growth-marketing' ? 'active' : ''}`}>
                                             <div className="menu-text">
                                                 <h4>Growth Marketing</h4>
                                                 <p>Data-driven strategies to boost customer value.</p>
@@ -556,7 +595,7 @@ export default function Header() {
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li className="content-glosary">
+                                        <li className={`content-glosary ${selectedMenuItem === 'data-intelligence' ? 'active' : ''}`}>
                                             <div className="menu-text">
                                                 <h4>Data Intelligence</h4>
                                                 <p>Leverage data to enhance marketing outcomes.</p>
@@ -565,7 +604,7 @@ export default function Header() {
                                                 <div>
                                                     <a
                                                         className="variant-item"
-                                                        href="https://powerdigitalmarketing.com/data-intelligence-company/"
+                                                        href="/data-intelligence-company/"
                                                     >
                                                         <Image src={NovaReport} alt="" />
                                                         <div className="text">
@@ -580,7 +619,7 @@ export default function Header() {
                                                 <div>
                                                     <a
                                                         className="variant-item"
-                                                        href="https://powerdigitalmarketing.com/data-infrastructure-cdps/"
+                                                        href="/data-infrastructure-cdps/"
                                                     >
                                                         <Image src={GeneralUse9100} alt="" />
                                                         <div className="text">
@@ -595,7 +634,7 @@ export default function Header() {
                                                 <div>
                                                     <a
                                                         className="variant-item"
-                                                        href="https://powerdigitalmarketing.com/marketing-measurement-incrementality/"
+                                                        href="/marketing-measurement-incrementality/"
                                                     >
                                                         <Image
                                                             src={WebContentAuditNextStepsStrat}
@@ -613,7 +652,7 @@ export default function Header() {
                                                 <div>
                                                     <a
                                                         className="variant-item"
-                                                        href="https://powerdigitalmarketing.com/marketing-mix-modeling-data-science/"
+                                                        href="/marketing-mix-modeling-data-science/"
                                                     >
                                                         <Image
                                                             src={WebContentTestimonials}
@@ -630,7 +669,7 @@ export default function Header() {
                                                 </div>
                                             </div>
                                         </li>
-                                        <li className="content-glosary">
+                                        <li className={`content-glosary ${selectedMenuItem === 'consulting' ? 'active' : ''}`}>
                                             <div className="menu-text">
                                                 <h4>Consulting</h4>
                                                 <p>Transformative growth with bespoke strategies.</p>
@@ -639,7 +678,7 @@ export default function Header() {
                                                 <div>
                                                     <a
                                                         className="variant-item"
-                                                        href="https://powerdigitalmarketing.com/strategic-consulting/"
+                                                        href="/strategic-consulting/"
                                                     >
                                                         <Image src={GeneralUse7100} alt="" />
                                                         <div className="text">
@@ -654,7 +693,7 @@ export default function Header() {
                                                 <div>
                                                     <a
                                                         className="variant-item"
-                                                        href="https://powerdigitalmarketing.com/strategic-consulting-go-to-market-strategy/"
+                                                        href="/strategic-consulting-go-to-market-strategy/"
                                                     >
                                                         <Image
                                                             src={NovaMachineLearning}
@@ -672,7 +711,7 @@ export default function Header() {
                                                 <div>
                                                     <a
                                                         className="variant-item"
-                                                        href="https://powerdigitalmarketing.com/strategic-consulting-media-planning-forecasting/"
+                                                        href="/strategic-consulting-media-planning-forecasting/"
                                                     >
                                                         <Image
                                                             src={WebContentAuditNextStepsAssess}
@@ -690,7 +729,7 @@ export default function Header() {
                                                 <div>
                                                     <a
                                                         className="variant-item"
-                                                        href="https://powerdigitalmarketing.com/strategic-consulting-persona-development/"
+                                                        href="/strategic-consulting-persona-development/"
                                                     >
                                                         <Image src={GeneralUse5100} alt="" />
                                                         <div className="text">
@@ -704,7 +743,7 @@ export default function Header() {
                                                 </div>
                                             </div>
                                         </li>
-                                        <li className="content-glosary">
+                                        <li className={`content-glosary ${selectedMenuItem === 'creative' ? 'active' : ''}`}>
                                             <div className="menu-text">
                                                 <h4>Creative</h4>
                                                 <p>
@@ -715,7 +754,7 @@ export default function Header() {
                                                 <div>
                                                     <a
                                                         className="variant-item"
-                                                        href="https://powerdigitalmarketing.com/services/creative-home/"
+                                                        href="/services/creative-home/"
                                                     >
                                                         <Image
                                                             src={GeneralPowerDigitalValues100}
@@ -733,7 +772,7 @@ export default function Header() {
                                                 <div>
                                                     <a
                                                         className="variant-item"
-                                                        href="https://powerdigitalmarketing.com/services/creative-services-strategy/"
+                                                        href="/services/creative-services-strategy/"
                                                     >
                                                         <Image src={GeneralUse2100} alt="" />
                                                         <div className="text">
@@ -749,7 +788,7 @@ export default function Header() {
                                                 <div>
                                                     <a
                                                         className="variant-item"
-                                                        href="https://powerdigitalmarketing.com/services/creative-services-brand-design-editing/"
+                                                        href="/services/creative-services-brand-design-editing/"
                                                     >
                                                         <Image src={NovaScale} alt="" />
                                                         <div className="text">
@@ -799,7 +838,7 @@ export default function Header() {
                                     <ul className="mega-menu-list">
                                         <li className="mega-menu-item">
                                             <a
-                                                href="https://powerdigitalmarketing.com/nova/"
+                                                href="/nova/"
                                                 aria-label="Go to nova page"
                                             >
                                                 <Image src={GeneralUse5100} alt="" />
@@ -811,7 +850,7 @@ export default function Header() {
                                         </li>
                                         <li className="mega-menu-item">
                                             <a
-                                                href="https://powerdigitalmarketing.com/nova-intelligence/creative-affinity/"
+                                                href="/nova-intelligence/creative-affinity/"
                                                 aria-label="Go to nova Intelligence page"
                                             >
                                                 <Image
@@ -831,7 +870,7 @@ export default function Header() {
                         <li className="nav-item">
                             <a
                                 className="nav-link"
-                                href="https://powerdigitalmarketing.com/company/"
+                                href="/company/"
                                 aria-current="page"
                                 aria-expanded="false"
                                 aria-label="Open Company menu"
@@ -843,7 +882,7 @@ export default function Header() {
                         <li className="nav-item">
                             <a
                                 className="nav-link"
-                                href="https://powerdigitalmarketing.com/the-power-circuit-v1/"
+                                href="/the-power-circuit-v1/"
                                 aria-current="page"
                                 aria-expanded="false"
                                 aria-label="Open Our Methodology menu"
@@ -884,7 +923,7 @@ export default function Header() {
                                     <ul className="mega-menu-list">
                                         <li className="mega-menu-item">
                                             <a
-                                                href="https://powerdigitalmarketing.com/blog/"
+                                                href="/blog/"
                                                 aria-label="Go to Blog page"
                                             >
                                                 <div className="text">
@@ -940,7 +979,7 @@ export default function Header() {
                                 <li className="notifications-list__content__item">
                                     <a
                                         className="item-link"
-                                        href="https://powerdigitalmarketing.com/resources/resources-the-current-state-of-the-fashion-industry/"
+                                        href="/resources/resources-the-current-state-of-the-fashion-industry/"
                                     >
                                         <Image
                                             className="item-image"
@@ -959,7 +998,7 @@ export default function Header() {
                                 <li className="notifications-list__content__item">
                                     <a
                                         className="item-link"
-                                        href="https://powerdigitalmarketing.com/resources/unlock-growth-with-the-power-circuit-framework/"
+                                        href="/resources/unlock-growth-with-the-power-circuit-framework/"
                                     >
                                         <Image className="item-image" src={Tpc240x300} alt="img" />
                                         <div className="item-title">
@@ -992,5 +1031,6 @@ export default function Header() {
                 </div>
             </nav>
         </header>
+        </>
     )
 }

@@ -26,12 +26,12 @@
     content: "\e913";
 }
 
-.header .navbar-container .nav .nav-item.has-mega-menu .mega-menu .content-glosary {
+/* .header .navbar-container .nav .nav-item.has-mega-menu .mega-menu .content-glosary {
     display: block !important;
-}
+} */
 
 .pin-spacer{
-  height: 1856px !important;
+  height: 2050px !important;
 }
 .data-driven-insight {
   z-index: 60;

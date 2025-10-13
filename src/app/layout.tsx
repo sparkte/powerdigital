@@ -5,6 +5,8 @@ import '../css/style.css';
 import '../css/cookieblocker.min.css'; 
 import '../css/endrock.styles.css'; 
 // import Script from "next/script";
+import Footer from "./mainlayout/footer/footer";
+
 
 
 const geistSans = Geist({
@@ -33,7 +35,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
-        
+        <Footer/>
       </body>
     </html>
   );

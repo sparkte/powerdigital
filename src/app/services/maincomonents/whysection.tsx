@@ -1,4 +1,6 @@
-"use server";
+"use client";
+
+import { useEffect, useState } from 'react';
 
 interface ContentItem {
   type: 'paragraph' | 'list' | 'bullet_points';
@@ -20,6 +22,12 @@ interface WhySectionProps {
 }
 
 const WhySection = ({ data }: WhySectionProps) => {
+    const [isMounted, setIsMounted] = useState(false);
+
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
+
     const renderContentItem = (item: ContentItem, index: number) => {
         switch (item.type) {
             case 'paragraph':
@@ -29,8 +37,10 @@ const WhySection = ({ data }: WhySectionProps) => {
                             <b>{item.content}</b>
                         ) : (
                             <span style={{ fontWeight: 400 }}>
-                                {typeof item.content === 'string' && (
+                                {typeof item.content === 'string' && isMounted ? (
                                     <span dangerouslySetInnerHTML={{ __html: item.content }} />
+                                ) : (
+                                    <span>{item.content}</span>
                                 )}
                             </span>
                         )}
@@ -41,10 +51,13 @@ const WhySection = ({ data }: WhySectionProps) => {
                     <div key={index}>
                         {Array.isArray(item.content) && item.content.map((listItem, listIndex) => (
                             <p key={listIndex}>
-                                <span 
-                                    style={{ fontWeight: 400 }}
-                                    dangerouslySetInnerHTML={{ __html: listItem }}
-                                />
+                                <span style={{ fontWeight: 400 }}>
+                                    {isMounted ? (
+                                        <span dangerouslySetInnerHTML={{ __html: listItem }} />
+                                    ) : (
+                                        <span>{listItem}</span>
+                                    )}
+                                </span>
                             </p>
                         ))}
                     </div>
@@ -54,10 +67,13 @@ const WhySection = ({ data }: WhySectionProps) => {
                     <ul key={index}>
                         {Array.isArray(item.content) && item.content.map((bulletItem, bulletIndex) => (
                             <li key={bulletIndex}>
-                                <span 
-                                    style={{ fontWeight: 400 }}
-                                    dangerouslySetInnerHTML={{ __html: bulletItem }}
-                                />
+                                <span style={{ fontWeight: 400 }}>
+                                    {isMounted ? (
+                                        <span dangerouslySetInnerHTML={{ __html: bulletItem }} />
+                                    ) : (
+                                        <span>{bulletItem}</span>
+                                    )}
+                                </span>
                             </li>
                         ))}
                     </ul>

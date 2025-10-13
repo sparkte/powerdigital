@@ -16295,12 +16295,12 @@ button:focus {
     transition: all .3s
 }
 
-.header .navbar-container .nav .nav-item.has-mega-menu .mega-menu .menu-glosary__item.active-glosary {
+.header .navbar-container .nav .nav-item.has-mega-menu .mega-menu .menu-glosary__item.active {
     background-color: #fff
 }
 
 @media(min-width:992px) {
-    .header .navbar-container .nav .nav-item.has-mega-menu .mega-menu .menu-glosary__item.active-glosary {
+    .header .navbar-container .nav .nav-item.has-mega-menu .mega-menu .menu-glosary__item.active {
         background-color: #fff
     }
 
@@ -16348,7 +16348,7 @@ button:focus {
     display: none
 }
 
-.header .navbar-container .nav .nav-item.has-mega-menu .mega-menu .content-glosary.active-content {
+.header .navbar-container .nav .nav-item.has-mega-menu .mega-menu .content-glosary.active {
     display: block
 }
 
