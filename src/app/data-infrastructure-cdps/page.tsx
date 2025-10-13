@@ -131,7 +131,7 @@ const AmazonMarketingPage = () => {
       <main>
         <section className="single-hero bg-light  bordered-section ">
           <div className="single-hero__text">
-            <span className="badge rounded-pill bg-light">Data Infrastructure + CDP's</span>
+            <span className="badge rounded-pill bg-light">Data Infrastructure + CDPs</span>
 
             <div className="title">
               <h1>Making smart decisions requires <span className="highlighted">accurate and accessible data.</span>  </h1>

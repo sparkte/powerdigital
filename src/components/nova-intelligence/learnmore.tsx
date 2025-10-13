@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function learnmore() {
+export default function LearnMore() {
   return (
     <>
     <section className="section-list-accordion bg-light">
@@ -60,7 +60,7 @@ export default function learnmore() {
                       <span style={{ fontWeight: 400 }}>
                         Yes, Creative Affinity supports ad performance analysis
                         across platforms like Meta, TikTok, and YouTube (coming
-                        soon), providing tailored insights for each platforms
+                        soon), providing tailored insights for each platform&#39;s
                         unique audience and performance metrics.
                       </span>
                     </p>
@@ -112,7 +112,7 @@ export default function learnmore() {
                       <span style={{ fontWeight: 400 }}>
                         Absolutely. It evaluates a variety of ad formats,
                         including static images, videos, and UGC (User-Generated
-                        Content), and provides inspiration based on the formats
+                        Content), and provides inspiration based on the format&#39;s
                         performance.
                       </span>
                     </p>
@@ -151,7 +151,7 @@ export default function learnmore() {
                 itemType="https://schema.org/Question"
               >
                 <summary itemProp="name">
-                  What if an ad doesn't have LTV attributed?{" "}
+                  What if an ad doesn&#39;t have LTV attributed?{" "}
                   <i className="icon-chevron-right" />
                 </summary>
                 <div
@@ -163,7 +163,7 @@ export default function learnmore() {
                     <p>
                       <span style={{ fontWeight: 400 }}>
                         This typically means the system was unable to match the
-                        ad to a customers transaction, often due to limited
+                        ad to a customer&#39;s transaction, often due to limited
                         data, low spend, or tracking configuration issues.
                         However, depending on your campaign objectives, or
                         recency of campaign deployment, some ads may not yet

@@ -58,8 +58,8 @@ export default function BackgroundImageSection() {
                 >
                     <div className="note__text">
                         <p>
-                            "The results have been incredible. With Power Digital, it feels like
-                            they're in our trench, supporting and understanding us. They're like a
+                            The results have been incredible. With Power Digital, it feels like
+                            they&apos;re in our trench, supporting and understanding us. They&apos;re like a
                             partner and mentor in helping us get where we want to be.
                         </p>
                     </div>

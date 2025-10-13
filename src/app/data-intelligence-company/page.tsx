@@ -28,7 +28,7 @@ export default function DataIntelligenceCompany() {
                                 </p>
                                 <ul style={{ paddingLeft: "2rem" }}>
                                     <li style={{ fontSize: "1rem", marginBottom: 0, paddingLeft: 0 }}>
-                                        Marketing's true incremental ROI
+                                    Marketing&#39;s true incremental ROI
                                     </li>
                                     <li style={{ fontSize: "1rem", marginBottom: 0, paddingLeft: 0 }}>
                                         Impact by channel and tactic

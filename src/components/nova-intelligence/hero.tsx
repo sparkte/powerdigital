@@ -7,7 +7,7 @@ import image4 from '../../images/Untitled-1080-x-750-px-7.png'
 import image5 from '../../images/Screenshot-2024-11-26-at-8.29.31 AM.png'
 import image6 from '../../images/Untitled-1080-x-750-px-4.png'
 
-export default function hero() {
+export default function Hero() {
   const tabs = [
     {
       id: 'creative-affinity',

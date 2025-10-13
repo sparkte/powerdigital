@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-export default function services() {
+export default function Services() {
     const [growthMarketingTab, setGrowthMarketingTab] = useState(0);
     const [dataIntelligenceTab, setDataIntelligenceTab] = useState(0);
     const [consultingTab, setConsultingTab] = useState(0);
@@ -78,7 +78,7 @@ export default function services() {
                                     )}
                                     {growthMarketingTab === 5 && (
                                         <p>
-                                            Leverage the reach and credibility of your audience's role models.
+                                            Leverage the reach and credibility of your audience&#39;s role models.
                                         </p>
                                     )}
                                     {growthMarketingTab === 6 && (
@@ -409,7 +409,7 @@ export default function services() {
                                     {creativeTab === 1 && (
                                         <p>
                                             <span style={{ fontWeight: 400 }}>
-                                                Our creative work isn't just beautiful—it's built to perform.
+                                                Our creative work isn&#39;t just beautiful—it&#39;s built to perform.
                                                 Every{" "}
                                             </span>
                                             <span style={{ fontWeight: 400 }}>campaign</span>
@@ -428,7 +428,7 @@ export default function services() {
                                     )}
                                     {creativeTab === 2 && (
                                         <p>
-                                            <span style={{ fontWeight: 400 }}>Whether it's a </span>
+                                            <span style={{ fontWeight: 400 }}>Whether it&#39;s a </span>
                                             <span style={{ fontWeight: 400 }}>social media </span>
                                             <span style={{ fontWeight: 400 }}>
                                                 ad, a branded email marketing campaign, or a cost-effective
