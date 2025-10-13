@@ -4,7 +4,21 @@ import FadeUp from "./FadeUp";
 export default function duallayout1() {
   return (
     <>
-    <section className="dual-layout-section bg-light ">
+    
+    <section className="dual-layout-section-wrapper">
+      <div className="separator" >
+      <hr />
+      <div className="separator__text">
+        <span>Power Digital</span>
+        <div>
+          <span className="separator__number">01</span>
+          <span>Who we are</span>
+        </div>
+      </div>
+    </div>
+      <div className="dual-layout-section bg-light ">
+
+      
       <div className="container-note-image ">
         <FadeUp>
         <div className="note-image fade-up">
@@ -38,6 +52,7 @@ export default function duallayout1() {
             </div>
           </a>
         </div>
+      </div>
       </div>
     </section>
     </>

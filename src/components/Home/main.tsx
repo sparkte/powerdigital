@@ -22,7 +22,7 @@ import CustomLogoCarousel from "./LogoCarousel";
 import Fullheader from './fullheader';
 import { useState } from "react";
 import Metadtalinks from './metadtalinks';
-import Seprator from './seprator';
+// import Seprator from './seprator';
 import Footer from './footer';
 import Education from './education';
 import Seprator2 from './seprator2';
@@ -60,7 +60,7 @@ export default function Main() {
   <Fullheader showLogo={showNavbarLogo} />
   <main>
     <HeroAnimation PowerSvg={PowerSvg} onHeroLogoHide={setShowNavbarLogo}/>
-    <Seprator/>
+    {/* <Seprator/> */}
     <Dualllayout1/>
     <Dualllayout2/>
    <Powerdigital/>
