@@ -4,7 +4,10 @@ import image2 from '../../images/service-icon-3.svg'
 import image3 from '../../images/EDIT-Services_PublicRelations_100-01-1.svg'
 import image4 from '../../images/service-icon-4.svg'
 export default function section2() {
-  return (
+  return (       
+
+
+    
     <>
      <section className="text-banner bg-light">
       <p>Your partner for</p>
