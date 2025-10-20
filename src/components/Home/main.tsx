@@ -12,29 +12,17 @@ import AlliantPdm from '../../images/Alliant_pdm.png';
 import AsicsPdm from '../../images/asics_pdm.png';
 import AviatorNationPdm from '../../images/aviator-nation_pdm.png';
 import CatalinaCrunch from '../../images/Catalina-crunch_pdm.png';
-<<<<<<< HEAD
 import CoolaPdm from '../../images/coola_pdm.png';
 import CrocsPdm from '../../images/crocs_pdm.png';
 import CymbiotikaPdm from '../../images/Cymbiotika_pdm.png';
 import DataworldPdm from '../../images/dataworld_pdm.png';
 import GoldBellyPdm from '../../images/Gold_belly_pdm.png';
-=======
-import CoolaPdm from '../../images/Coola_pdm.png';
-import CrocsPdm from '../../images/crocs_pdm.png';
-import CymbiotikaPdm from '../../images/Cymbiotika_pdm.png';
-import DataworldPdm from '../../images/dataworld_pdm.png';
-import GoldBellyPdm from '../../images/Gold_Belly_pdm.png';
->>>>>>> a5e310846ed701c4951f2ab5a1795e195b29aa3a
 import GorjanaPdm from '../../images/gorjana_pdm.png';
 import CustomLogoCarousel from "./LogoCarousel";
 import Fullheader from './fullheader';
 import { useState } from "react";
 import Metadtalinks from './metadtalinks';
-<<<<<<< HEAD
 // import Seprator from './seprator';
-=======
-import Seprator from './seprator';
->>>>>>> a5e310846ed701c4951f2ab5a1795e195b29aa3a
 import Footer from './footer';
 import Education from './education';
 import Seprator2 from './seprator2';

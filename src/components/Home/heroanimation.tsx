@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // "use client";
 // import { useEffect, useRef } from "react";
 // import Image, { StaticImageData } from "next/image";
@@ -823,8 +822,6 @@
 // export default HeroAnimation;
 
 
-=======
->>>>>>> a5e310846ed701c4951f2ab5a1795e195b29aa3a
 "use client";
 import { useEffect, useRef } from "react";
 import Image, { StaticImageData } from "next/image";
