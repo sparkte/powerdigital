@@ -17732,10 +17732,10 @@ button:focus {
     .hero--home {
         display: flex;
         flex-direction: column;
-        height: calc(100vh - 113px);
+        /* height: calc(100vh - 113px); */
         justify-content: space-between;
         max-height: 700px;
-        min-height: 670px
+        /* min-height: 670px */
     }
 }
 
