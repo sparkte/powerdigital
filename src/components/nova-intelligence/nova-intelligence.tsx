@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../consumer/header'
 import Metalinks from './metalinks'
 import Hero from './hero'
-import Footer from '../Home/footer'
+// import Footer from '../Home/footer'
 import Features from './features'
 import Report from './report'
 import Learnmore from './learnmore'
@@ -21,7 +21,7 @@ export default function novaintelligence() {
     
     
   </main>
-  <Footer />
+  {/* <Footer /> */}
 </>
 
     </>

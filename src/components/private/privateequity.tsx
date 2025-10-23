@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../consumer/header'
-import Footer from '../Home/footer'
+// import Footer from '../Home/footer'
 import Metalinks from './metalinks'
 import Mainprivate from './mainprivate'
 import Approach from './approach'
@@ -29,7 +29,7 @@ export default function privateequity() {
     <Insight/>
     
   </main>
- <Footer/>
+ {/* <Footer/> */}
 </>
 
     </>

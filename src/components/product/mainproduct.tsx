@@ -1,6 +1,6 @@
 import React from 'react'
 import Approach from './approach'
-import Footer from '../Home/footer'
+// import Footer from '../Home/footer'
 import Header from '../consumer/header'
 import Hero from './hero'
 import Intelligent from './intelligent'
@@ -30,7 +30,7 @@ export default function mainproduct() {
     
    <Insight2/>
   </main>
-  <Footer/>
+  {/* <Footer/> */}
 </>
 
   )

@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../consumer/header'
-import Footer from '../Home/footer'
+// import Footer from '../Home/footer'
 import Metalinks from './metalinks'
 import Hero from './hero'
 import Logos from './logos'
@@ -30,7 +30,7 @@ export default function maincpg() {
     <Insight/>
    <Insight2/>
   </main>
- <Footer/>
+ {/* <Footer/> */}
 </>
 
     </>

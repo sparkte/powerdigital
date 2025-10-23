@@ -3,7 +3,7 @@ import Header from '../consumer/header'
 import Metalinks from './metalinks'
 import Hero from './hero'
 import Logocarousal from './logocarousal'
-import Logocarousal2 from './logocarousal2'
+// import Logocarousal2 from './logocarousal2'
 import Testominal from './testominal'
 
 export default function workmain() {
@@ -14,7 +14,7 @@ export default function workmain() {
   <main>
     <Hero/>
     <Logocarousal/>
-    <Logocarousal2/>
+    {/* <Logocarousal2/> */}
     <Testominal/>
     
   </main>

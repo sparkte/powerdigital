@@ -869,8 +869,8 @@ const HeroAnimation: React.FC<HeroAnimationProps> = ({
     const incrementPer100px = 60;
     const maxWidth = 2500;
 
-    let currentWidth = Math.min(window.innerWidth, maxWidth);
-    let extraWidth = currentWidth - baseWidth;
+    const currentWidth = Math.min(window.innerWidth, maxWidth);
+    const extraWidth = currentWidth - baseWidth;
 
     const wrapperHeight = baseHeight + (extraWidth / 100) * incrementPer100px;
 
@@ -882,9 +882,14 @@ const HeroAnimation: React.FC<HeroAnimationProps> = ({
     const incrementPer100pxY = 40;
     const maxTextWidth = 2500;
 
-    let currentWidthText = Math.min(window.innerWidth, maxTextWidth);
-    let extraWidthText = Math.max(currentWidthText - baseTextWidth, 0);
+    // let currentWidthText = Math.min(window.innerWidth, maxTextWidth);
+    // let extraWidthText = Math.max(currentWidthText - baseTextWidth, 0);
+      // Lines 872-873
 
+
+    // Lines 885-886
+    const currentWidthText = Math.min(window.innerWidth, maxTextWidth);
+    const extraWidthText = Math.max(currentWidthText - baseTextWidth, 0);
     // how much extra translateY to add
     const extraTranslateY = (extraWidthText / 100) * incrementPer100pxY;
 
@@ -1011,9 +1016,9 @@ tlUnpinned
     };
   }, [onHeroLogoHide]);
 
-  function calc(arg0: number, arg1: number, px: any) {
-    throw new Error("Function not implemented.");
-  }
+  // function calc(arg0: number, arg1: number, px: any) {
+  //   throw new Error("Function not implemented.");
+  // }
 
   return (
     <div

@@ -1,5 +1,5 @@
 import React from 'react'
-import Footer from '../Home/footer'
+// import Footer from '../Home/footer'
 import Header from '../consumer/header'
 import Metalinks from './metalinks'
 import Hero from './hero'
@@ -25,7 +25,7 @@ export default function company() {
           <Plybook />
           <Insight />
         </main>
-        <Footer />
+        {/* <Footer /> */}
       </>
     </>
   )

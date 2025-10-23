@@ -814,7 +814,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                   <ul className="mega-menu-list">
                     <li className="mega-menu-item">
                       <a
-                        href="https://powerdigitalmarketing.com/nova/"
+                        href="/nova/"
                         aria-label="Go to nova page"
                       >
                         <Image src={GeneralUse5100} alt="" />
@@ -826,7 +826,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                     </li>
                     <li className="mega-menu-item">
                       <a
-                        href="https://powerdigitalmarketing.com/nova-intelligence/creative-affinity/"
+                        href="/novaintelligence/"
                         aria-label="Go to nova Intelligence page"
                       >
                         <Image
@@ -846,7 +846,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
             <li className="nav-item">
               <a
                 className="nav-link"
-                href="https://powerdigitalmarketing.com/company/"
+                href="/company/"
                 aria-current="page"
                 aria-expanded="false"
                 aria-label="Open Company menu"
@@ -887,7 +887,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                   <ul className="mega-menu-list">
                     <li className="mega-menu-item">
                       <a
-                        href="https://powerdigitalmarketing.com/blog/"
+                        href="/blog/"
                         aria-label="Go to Blog page"
                       >
                         <div className="text">
@@ -898,7 +898,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                     </li>
                     <li className="mega-menu-item">
                       <a
-                        href="/casestudies/"
+                        href="/case-studies/"
                         aria-label="Go to Case Studies page"
                       >
                         <div className="text">

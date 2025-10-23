@@ -9,6 +9,9 @@
        url('../fonts/fcd3d7597d60ffcb290e.ttf') format('truetype');
   /* Add more @font-face blocks for different weights (e.g., 'MyCustomFont Bold') */
 }
+#cmplz-cookiebanner-container{
+  display: none !important;
+}
 .icon-arrow-up-right:before {
   font-family: 'MyCustomFont' !important;
   content: "\e912"; /* or whatever your demo HTML shows for the arrow-up-right */

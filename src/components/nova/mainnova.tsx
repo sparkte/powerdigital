@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../consumer/header'
 import Metalinks from './metalinks'
-import Footer from '../Home/footer'
+// import Footer from '../Home/footer'
 import Hero from './hero'
 import LogoCarousel from '../product/logocarousal'
 import Novadrives from './novadrives'
@@ -24,7 +24,7 @@ export default function mainnova() {
     <Imagenova/>
     <List/>
   </main>
-  <Footer />
+  {/* <Footer /> */}
 </>
 
     </>

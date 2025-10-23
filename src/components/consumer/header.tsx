@@ -850,7 +850,7 @@ export default function Header() {
                                         </li>
                                         <li className="mega-menu-item">
                                             <a
-                                                href="/nova-intelligence/creative-affinity/"
+                                                href="/novaintelligence/"
                                                 aria-label="Go to nova Intelligence page"
                                             >
                                                 <Image
