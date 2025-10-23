@@ -12,7 +12,7 @@ export default function hero() {
         <span className="badge rounded-pill bg-dark">WORK WITH US</span>
         <div className="title">
           <h2>
-            Power Digital is trusted by the world's fastest growing brands
+            Power Digital is trusted by the world&apos;s fastest growing brands
           </h2>
         </div>
         <div className="stats-text">
