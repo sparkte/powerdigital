@@ -14940,10 +14940,11 @@ fieldset:disabled .btn {
 .heading-medium {
     font-size: 2.2222222222rem;
     font-weight: 700;
-    line-height: 36px
+    line-height: 36px;
+    text-align: left;
 }
 
-@media(min-width:768px) {
+@media(min-width:990px) {
     .heading-medium {
         font-size: 3.3333333333rem;
         line-height: 56.4px
