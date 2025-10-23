@@ -879,18 +879,7 @@ export default function Header() {
                                 Company
                             </a>
                         </li>
-                        <li className="nav-item">
-                            <a
-                                className="nav-link"
-                                href="/the-power-circuit-v1/"
-                                aria-current="page"
-                                aria-expanded="false"
-                                aria-label="Open Our Methodology menu"
-                                role="button"
-                            >
-                                Our Methodology
-                            </a>
-                        </li>
+                        
                         <li className="nav-item has-mega-menu">
                             <a
                                 className="nav-link"
