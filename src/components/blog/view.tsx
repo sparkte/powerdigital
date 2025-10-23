@@ -1,13 +1,18 @@
 import React from 'react'
 
 import OrganicSocialvsPaidSocialMedia from '../../images/8_Organic-Social-vs.-Paid-Social-Media.png';
-import ConversionRateOptimizationStrategies from '../../images/Conversion-Rate-Optimization-Strategies.png';
-import AntiChurnPlaybook from '../../images/Anti-churn-playbook.png';
+import ConversionRateOptimizationStrategies from '../../images/7_10-Winning-Conversion-Rate-Optimization-Strategies.jpg';
+import AntiChurnPlaybook from '../../images/The-Anti-Churn-Playbook.png';
 import WhyYourPreviousAgency from '../../images/Why-Your-Previous-Agency.png';
 import enlgishdeni from '../../images/enlgishdeni.png';
 import f008e1 from '../../images/49f008e1-86c3-4b30-badc-6cb561c3a69f.png';
 import e994a11 from '../../images/6e994a11-f604-4610-9c7f-b1b40c577772.png';
 import q4review from '../../images/q4-review.png';
+import wastedad from '../../images/wastedad.png';
+import holidayshop from '../../images/holidayshop-1024x683.jpg';
+import b6bc2835 from '../../images/b6bc2835-dd5e-42f4-aab4-0f1283492d0b.png';
+import foodbeverage from '../../images/food-beverage.png';
+import FashionTariffSqueeze from '../../images/Fashion-Brands-Are-Starting.png';
 
 export default function view() {
   return (
@@ -176,7 +181,7 @@ export default function view() {
             </div>
             <div className="article-card__image">
               <img
-                src="images/Fashion-Brands-Are-Starting.png"
+                src={FashionTariffSqueeze.src}
                 alt="Fashion Brands Are Starting to Feel the Tariff Squeeze—Here’s How to Protect Profitability"
                 loading="lazy"
               />
@@ -332,7 +337,7 @@ export default function view() {
             </div>
             <div className="article-card__image">
               <img
-                src="images/wastedad.png"
+                src={wastedad.src}
                 alt="The Hidden Cost of Wasted Ad Spend—and How to Fix It"
                 loading="lazy"
               />
@@ -348,7 +353,7 @@ export default function view() {
               </a>
             </div>
           </article>{" "}
-          <article className="article-card  d-none">
+           <article className="article-card  d-none">
             <div className="article-card__content">
               <div className="tags"></div>
               <h3 className="title">
@@ -358,7 +363,7 @@ export default function view() {
             </div>
             <div className="article-card__image">
               <img
-                src="images/holidayshop-scaled.jpg"
+                src={holidayshop.src}
                 alt="Why Early Customer Acquisition Is the Key to Holiday Success"
                 loading="lazy"
               />
@@ -385,7 +390,7 @@ export default function view() {
             </div>
             <div className="article-card__image">
               <img
-                src="images/b6bc2835-dd5e-42f4-aab4-0f1283492d0b.png"
+                src={b6bc2835.src}
                 alt="Turning Small Carts into Big Wins: Growing LTV in Food & Beverage"
                 loading="lazy"
               />
@@ -412,7 +417,7 @@ export default function view() {
             </div>
             <div className="article-card__image">
               <img
-                src="images/food-beverage.png"
+                src={foodbeverage.src}
                 alt="Messaging in a Regulated Market: 7 Food and Beverage Brand Compliance Tips"
                 loading="lazy"
               />
@@ -428,7 +433,7 @@ export default function view() {
               </a>
             </div>
           </article>{" "}
-          <article className="article-card  d-none">
+          {/*<article className="article-card  d-none">
             <div className="article-card__content">
               <div className="tags"></div>
               <h3 className="title">
@@ -46389,7 +46394,7 @@ export default function view() {
                 </div>
               </a>
             </div>
-          </article>{" "}
+          </article>{" "} 
           <article className="article-card  d-none">
             <div className="article-card__content">
               <div className="tags"></div>
@@ -46409,7 +46414,7 @@ export default function view() {
                 </div>
               </a>
             </div>
-          </article>
+          </article>*/}
         </div>
         <div className="view-more-btn w-100 text-center">
           <a href="" className="btn btn-secondary more-articles">

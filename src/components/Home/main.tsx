@@ -23,7 +23,6 @@ import Fullheader from './fullheader';
 import { useState } from "react";
 import Metadtalinks from './metadtalinks';
 // import Seprator from './seprator';
-import Footer from './footer';
 import Education from './education';
 import Seprator2 from './seprator2';
 import Services from './services';
@@ -71,7 +70,6 @@ export default function Main() {
     <Seprator2/>
     <Education/>
   </main>
-  <Footer/>
     </>
   )
 }

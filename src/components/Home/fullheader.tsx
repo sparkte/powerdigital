@@ -898,7 +898,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                     </li>
                     <li className="mega-menu-item">
                       <a
-                        href="/case-studies/"
+                        href="/casestudies/"
                         aria-label="Go to Case Studies page"
                       >
                         <div className="text">
@@ -922,7 +922,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
           </ul>
         </div>
         <div className="right-cta">
-          <a href="/work-with-us/" className="btn btn-sm btn-primary">
+          <a href="/workwithus/" className="btn btn-sm btn-primary">
             <div className="icon">
               <span>Work with us</span>
               <i className="icon-arrow-up-right" />

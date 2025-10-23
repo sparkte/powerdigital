@@ -13,6 +13,11 @@
   font-family: 'MyCustomFont' !important;
   content: "\e912"; /* or whatever your demo HTML shows for the arrow-up-right */
 }
+
+.footer__content__newsletter .form-newsletter .actions:after {
+  font-family: 'MyCustomFont', sans-serif !important;
+    content: "\e913";
+}
 .icon-chevron-right:before {
     font-family: 'MyCustomFont', sans-serif !important;
     content: "\e911"; /* This is the hex value for "" */
@@ -25,10 +30,14 @@
   font-family: 'MyCustomFont', sans-serif !important;
     content: "\e913";
 }
+.hubspot-form-container .hs-form .hs_submit .actions:after {
+  font-family: 'MyCustomFont', sans-serif !important;
+    content: "\e913";
+}
 
-/* .header .navbar-container .nav .nav-item.has-mega-menu .mega-menu .content-glosary {
+.header .navbar-container .nav .nav-item.has-mega-menu .mega-menu .content-glosary {
     display: block !important;
-} */
+}
 
 /* .pin-spacer{
   height: 1856px !important;

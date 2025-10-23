@@ -1,5 +1,5 @@
 import React from 'react'
-
+import powerplaceholder from '../../images/power-placeholder.png';
 export default function singlehero() {
   return (
     <>
@@ -36,7 +36,7 @@ export default function singlehero() {
       </div>
       <div className="single-hero__image">
         <div className="single-badge"></div>
-        <img src="images/power-placeholder.png" alt="" />
+        <img src={powerplaceholder.src} alt="" />
       </div>
     </section>
     </>

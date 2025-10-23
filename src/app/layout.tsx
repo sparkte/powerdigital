@@ -5,7 +5,7 @@ import '../css/style.css';
 import '../css/cookieblocker.min.css'; 
 import '../css/endrock.styles.css'; 
 // import Script from "next/script";
-import Footer from "./mainlayout/footer/footer";
+import Footer from "../components/Home/footer";
 
 
 
