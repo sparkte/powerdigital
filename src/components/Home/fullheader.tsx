@@ -71,6 +71,14 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
   // 1. State to manage the menu visibility
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  type MenuItemKey = "growth-marketing" | "data-intelligence" | "consulting" | "creative";
+          const [selectedMenuItem, setSelectedMenuItem] = useState<MenuItemKey>("growth-marketing");
+  
+          // Function to handle menu tab clicks
+          const handleTabClick = (menuKey: MenuItemKey) => {
+          setSelectedMenuItem(menuKey);
+          };
+
   // Function to toggle the menu state
   const toggleMenu = () => {
     setIsMenuOpen(prev => !prev);
@@ -261,10 +269,15 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                     <h3>Services</h3>
                   </a>
                   <ul className="menu-glosary">
-                    <li className="menu-glosary__item">
+                    <li className={`menu-glosary__item ${selectedMenuItem === 'growth-marketing' ? 'active' : ''}`}
+                    onClick={() => handleTabClick("growth-marketing")}>
                       <a
                         href="/services/growth-marketing/"
                         aria-label="Go to Growth Marketing page"
+                        onClick={(e) => {
+                                                    e.preventDefault();
+                                                    handleTabClick('growth-marketing');
+                                                }}
                       >
                         <p className="title">Growth Marketing</p>
                         <p className="description">
@@ -272,10 +285,15 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                         </p>
                       </a>
                     </li>
-                    <li className="menu-glosary__item">
+                    <li className={`menu-glosary__item ${selectedMenuItem === 'data-intelligence' ? 'active' : ''}`}
+                    onClick={() => handleTabClick("data-intelligence")}>
                       <a
                         href="/services/data-intelligence/"
                         aria-label="Go to Data Intelligence page"
+                        onClick={(e) => {
+                                                    e.preventDefault();
+                                                    handleTabClick('data-intelligence');
+                                                }}
                       >
                         <p className="title">Data Intelligence</p>
                         <p className="description">
@@ -283,10 +301,15 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                         </p>
                       </a>
                     </li>
-                    <li className="menu-glosary__item">
+                    <li className={`menu-glosary__item ${selectedMenuItem === 'consulting' ? 'active' : ''}`}
+                    onClick={() => handleTabClick("consulting")}>
                       <a
                         href="/services/consulting/"
                         aria-label="Go to Consulting page"
+                        onClick={(e) => {
+                                                    e.preventDefault();
+                                                    handleTabClick('consulting');
+                                                }}
                       >
                         <p className="title">Consulting</p>
                         <p className="description">
@@ -294,10 +317,15 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                         </p>
                       </a>
                     </li>
-                    <li className="menu-glosary__item">
+                    <li className={`menu-glosary__item ${selectedMenuItem === "creative" ? "active" : ""}`}
+                    onClick={() => handleTabClick("creative")}>
                       <a
                         href="/services/creative/"
                         aria-label="Go to Creative page"
+                        onClick={(e) => {
+                                                    e.preventDefault();
+                                                    handleTabClick('creative');
+                                                }}
                       >
                         <p className="title">Creative</p>
                         <p className="description">
@@ -315,468 +343,480 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                     </li>
                   </ul>
                   <ul className="content-sub-items">
-                    <li className="content-glosary">
+                    <li className={`content-glosary ${selectedMenuItem === "growth-marketing" ? "active" : ""}`}
+                                            onClick={() => handleTabClick("growth-marketing")}>
                       <div className="menu-text">
                         <h4>Growth Marketing</h4>
                         <p>Data-driven strategies to boost customer value.</p>
                       </div>
-                      <div className="content-list">
-                        <div>
-                          <span className="subtitle">Paid media</span>
-                        </div>
-                        <ul className="mega-menu-list">
-                          <li className="mega-menu-item">
-                            <a
-                              data-bs-toggle="tooltip"
-                              data-bs-placement="top"
-                              title="Unlock growth with Amazon’s power."
-                              href="/services/amazon-marketing/"
-                            >
-                              <Image
-                                src={ServiceAmazonMarketing}
-                                alt=""
-                              />
-                              <div className="text">
-                                <h5>Amazon</h5>
-                                <p>Unlock growth with Amazon’s power.</p>
-                              </div>
-                            </a>
-                          </li>
-                          <li className="mega-menu-item">
-                            <a
-                              data-bs-toggle="tooltip"
-                              data-bs-placement="top"
-                              title="Drive results with TikTok strategies."
-                              href="/services/tiktok/"
-                            >
-                              <Image src={ServicePpc} alt="" />
-                              <div className="text">
-                                <h5>TikTok</h5>
-                                <p>Drive results with TikTok strategies.</p>
-                              </div>
-                            </a>
-                          </li>
-                          <li className="mega-menu-item">
-                            <a
-                              data-bs-toggle="tooltip"
-                              data-bs-placement="top"
-                              title="Boost awareness with impactful media."
-                              href="/services/programmatic-advertising-agency/"
-                            >
-                              <Image
-                                src={GeneralPowerDigitalMission100}
-                                alt=""
-                              />
-                              <div className="text">
-                                <h5>Programmatic</h5>
-                                <p>Boost awareness with impactful media.</p>
-                              </div>
-                            </a>
-                          </li>
-                          <li className="mega-menu-item">
-                            <a
-                              data-bs-toggle="tooltip"
-                              data-bs-placement="top"
-                              title="Convert new audiences through social."
-                              href="/services/paid-social-media/"
-                            >
-                              <Image
-                                src={ServicesPaidSocial}
-                                alt=""
-                              />
-                              <div className="text">
-                                <h5>Paid Social</h5>
-                                <p>Convert new audiences through social.</p>
-                              </div>
-                            </a>
-                          </li>
-                          <li className="mega-menu-item">
-                            <a
-                              data-bs-toggle="tooltip"
-                              data-bs-placement="top"
-                              title="Capture traffic, eliminate wasted spend."
-                              href="/services/paid-media/"
-                            >
-                              <Image
-                                src={ServicesSocialMedia}
-                                alt=""
-                              />
-                              <div className="text">
-                                <h5>Paid Media</h5>
-                                <p>Capture traffic, eliminate wasted spend.</p>
-                              </div>
-                            </a>
-                          </li>
-                        </ul>
-                        <div>
-                          <span className="subtitle">Earned media</span>
-                        </div>
-                        <ul className="mega-menu-list">
-                          <li className="mega-menu-item">
-                            <a
-                              data-bs-toggle="tooltip"
-                              data-bs-placement="top"
-                              title="Build buzz and maximize brand awareness."
-                              href="/services/public-relations/"
-                            >
-                              <Image
-                                src={ServicesPublicRelations}
-                                alt=""
-                              />
-                              <div className="text">
-                                <h5>Public relations</h5>
-                                <p>Build buzz and maximize brand awareness.</p>
-                              </div>
-                            </a>
-                          </li>
-                          <li className="mega-menu-item">
-                            <a
-                              data-bs-toggle="tooltip"
-                              data-bs-placement="top"
-                              title="Expand reach with affiliate programs."
-                              href="/services/affiliate-marketing/"
-                            >
-                              <Image
-                                src={WebContentWebinar}
-                                alt=""
-                              />
-                              <div className="text">
-                                <h5>Affiliate</h5>
-                                <p>Expand reach with affiliate programs.</p>
-                              </div>
-                            </a>
-                          </li>
-                          <li className="mega-menu-item">
-                            <a
-                              data-bs-toggle="tooltip"
-                              data-bs-placement="top"
-                              title="Leverage trusted voices to build credibility."
-                              href="/services/influencer-marketing/"
-                            >
-                              <Image
-                                src={Services_InfluencerOutreach}
-                                alt=""
-                              />
-                              <div className="text">
-                                <h5>Influencer</h5>
-                                <p>
-                                  Leverage trusted voices to build credibility.
-                                </p>
-                              </div>
-                            </a>
-                          </li>
-                        </ul>
-                        <div>
-                          <span className="subtitle">Owned media</span>
-                        </div>
-                        <ul className="mega-menu-list">
-                          <li className="mega-menu-item">
-                            <a
-                              data-bs-toggle="tooltip"
-                              data-bs-placement="top"
-                              title="Grow traffic where users shop."
-                              href="/services/seo/"
-                            >
-                              <Image src={ServicesSEO} alt="" />
-                              <div className="text">
-                                <h5>SEO</h5>
-                                <p>Grow traffic where users shop.</p>
-                              </div>
-                            </a>
-                          </li>
-                          <li className="mega-menu-item">
-                            <a
-                              data-bs-toggle="tooltip"
-                              data-bs-placement="top"
-                              title="Retain customers, expand lifetime value."
-                              href="/services/email-marketing/"
-                            >
-                              <Image
-                                src={ServicesEmailMarketing}
-                                alt=""
-                              />
-                              <div className="text">
-                                <h5>Email &amp; SMS</h5>
-                                <p>Retain customers, expand lifetime value.</p>
-                              </div>
-                            </a>
-                          </li>
-                          <li className="mega-menu-item">
-                            <a
-                              data-bs-toggle="tooltip"
-                              data-bs-placement="top"
-                              title="Engage customers at every journey stage."
-                              href="/services/content-marketing/"
-                            >
-                              <Image
-                                src={ServicesContentMarketing}
-                                alt=""
-                              />
-                              <div className="text">
-                                <h5>Content marketing</h5>
-                                <p>Engage customers at every journey stage.</p>
-                              </div>
-                            </a>
-                          </li>
-                          <li className="mega-menu-item">
-                            <a
-                              data-bs-toggle="tooltip"
-                              data-bs-placement="top"
-                              title="Connect authentically through social media."
-                              href="/services/organic-social-media/"
-                            >
-                              <Image
-                                src={Services_SocialMedia}
-                                alt=""
-                              />
-                              <div className="text">
-                                <h5>Social Media</h5>
-                                <p>Connect authentically through social media.</p>
-                              </div>
-                            </a>
-                          </li>
-                          <li className="mega-menu-item">
-                            <a
-                              data-bs-toggle="tooltip"
-                              data-bs-placement="top"
-                              title="Make your brand visible across AI search."
-                              href="/services/generative-engine-optimization-geo-services/"
-                            >
-                              <Image
-                                src={ServiceCommunityManagement}
-                                alt=""
-                              />
-                              <div className="text">
-                                <h5>Generative Engine Optimization (GEO)</h5>
-                                <p>Make your brand visible across AI search.</p>
-                              </div>
-                            </a>
-                          </li>
-                          <li className="mega-menu-item">
-                            <a
-                              data-bs-toggle="tooltip"
-                              data-bs-placement="top"
-                              title="Maximize conversions with website optimization."
-                              href="/services/cro-conversion-rate-optimization/"
-                            >
-                              <Image src={ServicesCro} alt="" />
-                              <div className="text">
-                                <h5>CRO</h5>
-                                <p>
-                                  Maximize conversions with website optimization.
-                                </p>
-                              </div>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
+                      {selectedMenuItem === "growth-marketing" && (
+                                                                  <div className="content-list">
+                                                                                          <div>
+                                                                                            <span className="subtitle">Paid media</span>
+                                                                                          </div>
+                                                                                          <ul className="mega-menu-list">
+                                                                                            <li className="mega-menu-item">
+                                                                                              <a
+                                                                                                data-bs-toggle="tooltip"
+                                                                                                data-bs-placement="top"
+                                                                                                title="Unlock growth with Amazon’s power."
+                                                                                                href="/services/amazon-marketing/"
+                                                                                              >
+                                                                                                <Image
+                                                                                                  src={ServiceAmazonMarketing}
+                                                                                                  alt=""
+                                                                                                />
+                                                                                                <div className="text">
+                                                                                                  <h5>Amazon</h5>
+                                                                                                  <p>Unlock growth with Amazon’s power.</p>
+                                                                                                </div>
+                                                                                              </a>
+                                                                                            </li>
+                                                                                            <li className="mega-menu-item">
+                                                                                              <a
+                                                                                                data-bs-toggle="tooltip"
+                                                                                                data-bs-placement="top"
+                                                                                                title="Drive results with TikTok strategies."
+                                                                                                href="/services/tiktok/"
+                                                                                              >
+                                                                                                <Image src={ServicePpc} alt="" />
+                                                                                                <div className="text">
+                                                                                                  <h5>TikTok</h5>
+                                                                                                  <p>Drive results with TikTok strategies.</p>
+                                                                                                </div>
+                                                                                              </a>
+                                                                                            </li>
+                                                                                            <li className="mega-menu-item">
+                                                                                              <a
+                                                                                                data-bs-toggle="tooltip"
+                                                                                                data-bs-placement="top"
+                                                                                                title="Boost awareness with impactful media."
+                                                                                                href="/services/programmatic-advertising-agency/"
+                                                                                              >
+                                                                                                <Image
+                                                                                                  src={GeneralPowerDigitalMission100}
+                                                                                                  alt=""
+                                                                                                />
+                                                                                                <div className="text">
+                                                                                                  <h5>Programmatic</h5>
+                                                                                                  <p>Boost awareness with impactful media.</p>
+                                                                                                </div>
+                                                                                              </a>
+                                                                                            </li>
+                                                                                            <li className="mega-menu-item">
+                                                                                              <a
+                                                                                                data-bs-toggle="tooltip"
+                                                                                                data-bs-placement="top"
+                                                                                                title="Convert new audiences through social."
+                                                                                                href="/services/paid-social-media/"
+                                                                                              >
+                                                                                                <Image
+                                                                                                  src={ServicesPaidSocial}
+                                                                                                  alt=""
+                                                                                                />
+                                                                                                <div className="text">
+                                                                                                  <h5>Paid Social</h5>
+                                                                                                  <p>Convert new audiences through social.</p>
+                                                                                                </div>
+                                                                                              </a>
+                                                                                            </li>
+                                                                                            <li className="mega-menu-item">
+                                                                                              <a
+                                                                                                data-bs-toggle="tooltip"
+                                                                                                data-bs-placement="top"
+                                                                                                title="Capture traffic, eliminate wasted spend."
+                                                                                                href="/services/paid-media/"
+                                                                                              >
+                                                                                                <Image
+                                                                                                  src={ServicesSocialMedia}
+                                                                                                  alt=""
+                                                                                                />
+                                                                                                <div className="text">
+                                                                                                  <h5>Paid Media</h5>
+                                                                                                  <p>Capture traffic, eliminate wasted spend.</p>
+                                                                                                </div>
+                                                                                              </a>
+                                                                                            </li>
+                                                                                          </ul>
+                                                                                          <div>
+                                                                                            <span className="subtitle">Earned media</span>
+                                                                                          </div>
+                                                                                          <ul className="mega-menu-list">
+                                                                                            <li className="mega-menu-item">
+                                                                                              <a
+                                                                                                data-bs-toggle="tooltip"
+                                                                                                data-bs-placement="top"
+                                                                                                title="Build buzz and maximize brand awareness."
+                                                                                                href="/services/public-relations/"
+                                                                                              >
+                                                                                                <Image
+                                                                                                  src={ServicesPublicRelations}
+                                                                                                  alt=""
+                                                                                                />
+                                                                                                <div className="text">
+                                                                                                  <h5>Public relations</h5>
+                                                                                                  <p>Build buzz and maximize brand awareness.</p>
+                                                                                                </div>
+                                                                                              </a>
+                                                                                            </li>
+                                                                                            <li className="mega-menu-item">
+                                                                                              <a
+                                                                                                data-bs-toggle="tooltip"
+                                                                                                data-bs-placement="top"
+                                                                                                title="Expand reach with affiliate programs."
+                                                                                                href="/services/affiliate-marketing/"
+                                                                                              >
+                                                                                                <Image
+                                                                                                  src={WebContentWebinar}
+                                                                                                  alt=""
+                                                                                                />
+                                                                                                <div className="text">
+                                                                                                  <h5>Affiliate</h5>
+                                                                                                  <p>Expand reach with affiliate programs.</p>
+                                                                                                </div>
+                                                                                              </a>
+                                                                                            </li>
+                                                                                            <li className="mega-menu-item">
+                                                                                              <a
+                                                                                                data-bs-toggle="tooltip"
+                                                                                                data-bs-placement="top"
+                                                                                                title="Leverage trusted voices to build credibility."
+                                                                                                href="/services/influencer-marketing/"
+                                                                                              >
+                                                                                                <Image
+                                                                                                  src={Services_InfluencerOutreach}
+                                                                                                  alt=""
+                                                                                                />
+                                                                                                <div className="text">
+                                                                                                  <h5>Influencer</h5>
+                                                                                                  <p>
+                                                                                                    Leverage trusted voices to build credibility.
+                                                                                                  </p>
+                                                                                                </div>
+                                                                                              </a>
+                                                                                            </li>
+                                                                                          </ul>
+                                                                                          <div>
+                                                                                            <span className="subtitle">Owned media</span>
+                                                                                          </div>
+                                                                                          <ul className="mega-menu-list">
+                                                                                            <li className="mega-menu-item">
+                                                                                              <a
+                                                                                                data-bs-toggle="tooltip"
+                                                                                                data-bs-placement="top"
+                                                                                                title="Grow traffic where users shop."
+                                                                                                href="/services/seo/"
+                                                                                              >
+                                                                                                <Image src={ServicesSEO} alt="" />
+                                                                                                <div className="text">
+                                                                                                  <h5>SEO</h5>
+                                                                                                  <p>Grow traffic where users shop.</p>
+                                                                                                </div>
+                                                                                              </a>
+                                                                                            </li>
+                                                                                            <li className="mega-menu-item">
+                                                                                              <a
+                                                                                                data-bs-toggle="tooltip"
+                                                                                                data-bs-placement="top"
+                                                                                                title="Retain customers, expand lifetime value."
+                                                                                                href="/services/email-marketing/"
+                                                                                              >
+                                                                                                <Image
+                                                                                                  src={ServicesEmailMarketing}
+                                                                                                  alt=""
+                                                                                                />
+                                                                                                <div className="text">
+                                                                                                  <h5>Email &amp; SMS</h5>
+                                                                                                  <p>Retain customers, expand lifetime value.</p>
+                                                                                                </div>
+                                                                                              </a>
+                                                                                            </li>
+                                                                                            <li className="mega-menu-item">
+                                                                                              <a
+                                                                                                data-bs-toggle="tooltip"
+                                                                                                data-bs-placement="top"
+                                                                                                title="Engage customers at every journey stage."
+                                                                                                href="/services/content-marketing/"
+                                                                                              >
+                                                                                                <Image
+                                                                                                  src={ServicesContentMarketing}
+                                                                                                  alt=""
+                                                                                                />
+                                                                                                <div className="text">
+                                                                                                  <h5>Content marketing</h5>
+                                                                                                  <p>Engage customers at every journey stage.</p>
+                                                                                                </div>
+                                                                                              </a>
+                                                                                            </li>
+                                                                                            <li className="mega-menu-item">
+                                                                                              <a
+                                                                                                data-bs-toggle="tooltip"
+                                                                                                data-bs-placement="top"
+                                                                                                title="Connect authentically through social media."
+                                                                                                href="/services/organic-social-media/"
+                                                                                              >
+                                                                                                <Image
+                                                                                                  src={Services_SocialMedia}
+                                                                                                  alt=""
+                                                                                                />
+                                                                                                <div className="text">
+                                                                                                  <h5>Social Media</h5>
+                                                                                                  <p>Connect authentically through social media.</p>
+                                                                                                </div>
+                                                                                              </a>
+                                                                                            </li>
+                                                                                            <li className="mega-menu-item">
+                                                                                              <a
+                                                                                                data-bs-toggle="tooltip"
+                                                                                                data-bs-placement="top"
+                                                                                                title="Make your brand visible across AI search."
+                                                                                                href="/services/generative-engine-optimization-geo-services/"
+                                                                                              >
+                                                                                                <Image
+                                                                                                  src={ServiceCommunityManagement}
+                                                                                                  alt=""
+                                                                                                />
+                                                                                                <div className="text">
+                                                                                                  <h5>Generative Engine Optimization (GEO)</h5>
+                                                                                                  <p>Make your brand visible across AI search.</p>
+                                                                                                </div>
+                                                                                              </a>
+                                                                                            </li>
+                                                                                            <li className="mega-menu-item">
+                                                                                              <a
+                                                                                                data-bs-toggle="tooltip"
+                                                                                                data-bs-placement="top"
+                                                                                                title="Maximize conversions with website optimization."
+                                                                                                href="/services/cro-conversion-rate-optimization/"
+                                                                                              >
+                                                                                                <Image src={ServicesCro} alt="" />
+                                                                                                <div className="text">
+                                                                                                  <h5>CRO</h5>
+                                                                                                  <p>
+                                                                                                    Maximize conversions with website optimization.
+                                                                                                  </p>
+                                                                                                </div>
+                                                                                              </a>
+                                                                                            </li>
+                                                                                          </ul>
+                                                                  </div>
+                      )}
                     </li>
-                    <li className="content-glosary">
+                    <li className={`content-glosary ${selectedMenuItem === "data-intelligence" ? "active" : ""}`}
+                                            onClick={() => handleTabClick("data-intelligence")}>
                       <div className="menu-text">
                         <h4>Data Intelligence</h4>
                         <p>Leverage data to enhance marketing outcomes.</p>
                       </div>
-                      <div className="content-list">
-                        <div>
-                          <a
-                            className="variant-item"
-                            href="/data-intelligence-company/"
-                          >
-                            <Image src={NovaReport} alt="" />
-                            <div className="text">
-                              <h5>Data Intelligence</h5>
-                              <p>
-                                Strategically leverage data to drive informed
-                                marketing decisions and optimize outcomes.
-                              </p>
-                            </div>
-                          </a>
-                        </div>
-                        <div>
-                          <a
-                            className="variant-item"
-                            href="/data-infrastructure-cdps/"
-                          >
-                            <Image src={GeneralUse9100} alt="" />
-                            <div className="text">
-                              <h5>Data Infrastructure Services</h5>
-                              <p>
-                                Build a modern data stack to simplify management,
-                                ensure data quality, and drive smart decisions.
-                              </p>
-                            </div>
-                          </a>
-                        </div>
-                        <div>
-                          <a
-                            className="variant-item"
-                            href="https://powerdigitalmarketing.com/marketing-measurement-incrementality/"
-                          >
-                            <Image
-                              src={WebContentAuditNextStepsStrat}
-                              alt=""
-                            />
-                            <div className="text">
-                              <h5>Marketing Measurement + Incrementality</h5>
-                              <p>
-                                Save millions on ad spend with proven marketing
-                                measurement and incrementality.
-                              </p>
-                            </div>
-                          </a>
-                        </div>
-                        <div>
-                          <a
-                            className="variant-item"
-                            href="https://powerdigitalmarketing.com/marketing-mix-modeling-data-science/"
-                          >
-                            <Image
-                              src={WebContentTestimonials}
-                              alt=""
-                            />
-                            <div className="text">
-                              <h5>Marketing Mix Modeling + Data Science</h5>
-                              <p>
-                                Optimize marketing with advanced mix modeling and
-                                expert data science.
-                              </p>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
+                      {selectedMenuItem === "data-intelligence" && (
+                                                                  <div className="content-list">
+                                                                                          <div>
+                                                                                            <a
+                                                                                              className="variant-item"
+                                                                                              href="/data-intelligence-company/"
+                                                                                            >
+                                                                                              <Image src={NovaReport} alt="" />
+                                                                                              <div className="text">
+                                                                                                <h5>Data Intelligence</h5>
+                                                                                                <p>
+                                                                                                  Strategically leverage data to drive informed
+                                                                                                  marketing decisions and optimize outcomes.
+                                                                                                </p>
+                                                                                              </div>
+                                                                                            </a>
+                                                                                          </div>
+                                                                                          <div>
+                                                                                            <a
+                                                                                              className="variant-item"
+                                                                                              href="/data-infrastructure-cdps/"
+                                                                                            >
+                                                                                              <Image src={GeneralUse9100} alt="" />
+                                                                                              <div className="text">
+                                                                                                <h5>Data Infrastructure Services</h5>
+                                                                                                <p>
+                                                                                                  Build a modern data stack to simplify management,
+                                                                                                  ensure data quality, and drive smart decisions.
+                                                                                                </p>
+                                                                                              </div>
+                                                                                            </a>
+                                                                                          </div>
+                                                                                          <div>
+                                                                                            <a
+                                                                                              className="variant-item"
+                                                                                              href="/marketing-measurement-incrementality/"
+                                                                                            >
+                                                                                              <Image
+                                                                                                src={WebContentAuditNextStepsStrat}
+                                                                                                alt=""
+                                                                                              />
+                                                                                              <div className="text">
+                                                                                                <h5>Marketing Measurement + Incrementality</h5>
+                                                                                                <p>
+                                                                                                  Save millions on ad spend with proven marketing
+                                                                                                  measurement and incrementality.
+                                                                                                </p>
+                                                                                              </div>
+                                                                                            </a>
+                                                                                          </div>
+                                                                                          <div>
+                                                                                            <a
+                                                                                              className="variant-item"
+                                                                                              href="/marketing-mix-modeling-data-science/"
+                                                                                            >
+                                                                                              <Image
+                                                                                                src={WebContentTestimonials}
+                                                                                                alt=""
+                                                                                              />
+                                                                                              <div className="text">
+                                                                                                <h5>Marketing Mix Modeling + Data Science</h5>
+                                                                                                <p>
+                                                                                                  Optimize marketing with advanced mix modeling and
+                                                                                                  expert data science.
+                                                                                                </p>
+                                                                                              </div>
+                                                                                            </a>
+                                                                                          </div>
+                                                                  </div>
+                        )}
                     </li>
-                    <li className="content-glosary">
+                    <li className={`content-glosary ${selectedMenuItem === "consulting" ? "active" : ""}`}
+                                            onClick={() => handleTabClick("consulting")}>
                       <div className="menu-text">
                         <h4>Consulting</h4>
                         <p>Transformative growth with bespoke strategies.</p>
                       </div>
-                      <div className="content-list">
-                        <div>
-                          <a
-                            className="variant-item"
-                            href="https://powerdigitalmarketing.com/strategic-consulting/"
-                          >
-                            <Image src={GeneralUse7100} alt="" />
-                            <div className="text">
-                              <h5>Consulting</h5>
-                              <p>
-                                Navigate complexity with expert consulting
-                                tailored to your goals.
-                              </p>
-                            </div>
-                          </a>
-                        </div>
-                        <div>
-                          <a
-                            className="variant-item"
-                            href="https://powerdigitalmarketing.com/strategic-consulting-go-to-market-strategy/"
-                          >
-                            <Image
-                              src={NovaMachineLearning}
-                              alt=""
-                            />
-                            <div className="text">
-                              <h5>Full Go-To-Market Strategy</h5>
-                              <p>
-                                Unlock growth with a comprehensive, data-driven
-                                GTM digital strategy.
-                              </p>
-                            </div>
-                          </a>
-                        </div>
-                        <div>
-                          <a
-                            className="variant-item"
-                            href="https://powerdigitalmarketing.com/strategic-consulting-media-planning-forecasting/"
-                          >
-                            <Image
-                              src={WebContentAuditNextStepsAssess}
-                              alt=""
-                            />
-                            <div className="text">
-                              <h5>Media Planning Scenarios</h5>
-                              <p>
-                                Optimize ad spend with comprehensive media
-                                planning and data-driven forecasting.
-                              </p>
-                            </div>
-                          </a>
-                        </div>
-                        <div>
-                          <a
-                            className="variant-item"
-                            href="https://powerdigitalmarketing.com/strategic-consulting-persona-development/"
-                          >
-                            <Image src={GeneralUse5100} alt="" />
-                            <div className="text">
-                              <h5>Persona Development</h5>
-                              <p>
-                                Develop a data-driven ideal customer profile to
-                                enhance product and marketing strategies.
-                              </p>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
+                       {selectedMenuItem === "consulting" && (
+                                                                  <div className="content-list">
+                                                                                          <div>
+                                                                                            <a
+                                                                                              className="variant-item"
+                                                                                              href="/strategic-consulting/"
+                                                                                            >
+                                                                                              <Image src={GeneralUse7100} alt="" />
+                                                                                              <div className="text">
+                                                                                                <h5>Consulting</h5>
+                                                                                                <p>
+                                                                                                  Navigate complexity with expert consulting
+                                                                                                  tailored to your goals.
+                                                                                                </p>
+                                                                                              </div>
+                                                                                            </a>
+                                                                                          </div>
+                                                                                          <div>
+                                                                                            <a
+                                                                                              className="variant-item"
+                                                                                              href="/strategic-consulting-go-to-market-strategy/"
+                                                                                            >
+                                                                                              <Image
+                                                                                                src={NovaMachineLearning}
+                                                                                                alt=""
+                                                                                              />
+                                                                                              <div className="text">
+                                                                                                <h5>Full Go-To-Market Strategy</h5>
+                                                                                                <p>
+                                                                                                  Unlock growth with a comprehensive, data-driven
+                                                                                                  GTM digital strategy.
+                                                                                                </p>
+                                                                                              </div>
+                                                                                            </a>
+                                                                                          </div>
+                                                                                          <div>
+                                                                                            <a
+                                                                                              className="variant-item"
+                                                                                              href="/strategic-consulting-media-planning-forecasting/"
+                                                                                            >
+                                                                                              <Image
+                                                                                                src={WebContentAuditNextStepsAssess}
+                                                                                                alt=""
+                                                                                              />
+                                                                                              <div className="text">
+                                                                                                <h5>Media Planning Scenarios</h5>
+                                                                                                <p>
+                                                                                                  Optimize ad spend with comprehensive media
+                                                                                                  planning and data-driven forecasting.
+                                                                                                </p>
+                                                                                              </div>
+                                                                                            </a>
+                                                                                          </div>
+                                                                                          <div>
+                                                                                            <a
+                                                                                              className="variant-item"
+                                                                                              href="/strategic-consulting-persona-development/"
+                                                                                            >
+                                                                                              <Image src={GeneralUse5100} alt="" />
+                                                                                              <div className="text">
+                                                                                                <h5>Persona Development</h5>
+                                                                                                <p>
+                                                                                                  Develop a data-driven ideal customer profile to
+                                                                                                  enhance product and marketing strategies.
+                                                                                                </p>
+                                                                                              </div>
+                                                                                            </a>
+                                                                                          </div>
+                                                                  </div>
+                        )}
                     </li>
-                    <li className="content-glosary">
+                    <li className={`content-glosary ${selectedMenuItem === "creative" ? "active" : ""}`}
+                                            onClick={() => handleTabClick("creative")}>
                       <div className="menu-text">
                         <h4>Creative</h4>
                         <p>
                           Captivating campaigns for every customer touchpoint.
                         </p>
                       </div>
-                      <div className="content-list">
-                        <div>
-                          <a
-                            className="variant-item"
-                            href="https://powerdigitalmarketing.com/services/creative-home/"
-                          >
-                            <Image
-                              src={GeneralPowerDigitalValues100}
-                              alt=""
-                            />
-                            <div className="text">
-                              <h5>Creative</h5>
-                              <p>
-                                Combine art and strategy to craft creative
-                                campaigns that captivate and convert.
-                              </p>
-                            </div>
-                          </a>
-                        </div>
-                        <div>
-                          <a
-                            className="variant-item"
-                            href="https://powerdigitalmarketing.com/services/creative-services-strategy/"
-                          >
-                            <Image src={GeneralUse2100} alt="" />
-                            <div className="text">
-                              <h5>Strategy</h5>
-                              <p>
-                                Transform brand strategy into performance-driven
-                                digital marketing campaigns with our creative
-                                expertise.
-                              </p>
-                            </div>
-                          </a>
-                        </div>
-                        <div>
-                          <a
-                            className="variant-item"
-                            href="https://powerdigitalmarketing.com/services/creative-services-brand-design-editing/"
-                          >
-                            <Image src={NovaScale} alt="" />
-                            <div className="text">
-                              <h5>Brand, Design, &amp; Editing</h5>
-                              <p>
-                                Visuals and content that captivate, engage, and
-                                elevate your brand.
-                              </p>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
+                      {selectedMenuItem === "creative" && (
+                                                                  <div className="content-list">
+                                                                                          <div>
+                                                                                            <a
+                                                                                              className="variant-item"
+                                                                                              href="/services/creative-home/"
+                                                                                            >
+                                                                                              <Image
+                                                                                                src={GeneralPowerDigitalValues100}
+                                                                                                alt=""
+                                                                                              />
+                                                                                              <div className="text">
+                                                                                                <h5>Creative</h5>
+                                                                                                <p>
+                                                                                                  Combine art and strategy to craft creative
+                                                                                                  campaigns that captivate and convert.
+                                                                                                </p>
+                                                                                              </div>
+                                                                                            </a>
+                                                                                          </div>
+                                                                                          <div>
+                                                                                            <a
+                                                                                              className="variant-item"
+                                                                                              href="/services/creative-services-strategy/"
+                                                                                            >
+                                                                                              <Image src={GeneralUse2100} alt="" />
+                                                                                              <div className="text">
+                                                                                                <h5>Strategy</h5>
+                                                                                                <p>
+                                                                                                  Transform brand strategy into performance-driven
+                                                                                                  digital marketing campaigns with our creative
+                                                                                                  expertise.
+                                                                                                </p>
+                                                                                              </div>
+                                                                                            </a>
+                                                                                          </div>
+                                                                                          <div>
+                                                                                            <a
+                                                                                              className="variant-item"
+                                                                                              href="/services/creative-services-brand-design-editing/"
+                                                                                            >
+                                                                                              <Image src={NovaScale} alt="" />
+                                                                                              <div className="text">
+                                                                                                <h5>Brand, Design, &amp; Editing</h5>
+                                                                                                <p>
+                                                                                                  Visuals and content that captivate, engage, and
+                                                                                                  elevate your brand.
+                                                                                                </p>
+                                                                                              </div>
+                                                                                            </a>
+                                                                                          </div>
+                                                                  </div>
+                        )}
                     </li>
                   </ul>
                 </div>
@@ -943,7 +983,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                 <li className="notifications-list__content__item">
                   <a
                     className="item-link"
-                    href="https://powerdigitalmarketing.com/resources/resources-the-current-state-of-the-fashion-industry/"
+                    href="/resources-the-current-state-of-the-fashion-industry/"
                   >
                     <Image
                       className="item-image" alt="The Current State Of The Fashion"
@@ -961,7 +1001,7 @@ const Fullheader: React.FC<HeaderProps> = ({ showLogo }) => {
                 <li className="notifications-list__content__item">
                   <a
                     className="item-link"
-                    href="https://powerdigitalmarketing.com/resources/unlock-growth-with-the-power-circuit-framework/"
+                    href="/unlock-growth-with-the-power-circuit-framework/"
                   >
                     <Image className="item-image" src={Tpc240x300} alt="img" />
                     <div className="item-title">

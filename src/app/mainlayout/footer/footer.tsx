@@ -5,11 +5,11 @@ export default function FooterLayout() {
             <style>
                 {`
             
-            // .footer__content__badges__images img {
-            //     max-height: 60px;
-            //     max-width: 300px;
-            // }
-            // `}
+            .footer__content__badges__images img {
+                max-height: 60px;
+                max-width: 300px;
+            }
+            `}
             </style>
             <footer className="footer">
                 <section className="footer__content">

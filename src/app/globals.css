@@ -187,3 +187,13 @@
   padding: 0 !important;
 }
 }
+
+
+.resource-description-wrapper .resource-description-content{
+  border: none !important;
+}
+.ggg {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
