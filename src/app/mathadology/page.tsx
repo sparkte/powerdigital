@@ -1,4 +1,4 @@
-import Mainnova from '../../components/methadology/main' 
+import Mainnova from '../../components/Fashion-industry/main' 
 
 export default function nova() {
   return <Mainnova />;
