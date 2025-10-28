@@ -1,7 +1,9 @@
 @import "tailwindcss";
 
 /* src/app/globals.css or src/app/style.css */
-
+/* :root {
+  --scale: calc(100vw / 1920) !important;
+} */
 @font-face {
   font-family: 'MyCustomFont'; /* Give your font a recognizable name */
   src: url('../fonts/0dbf5fb5ae5f0106803f.woff') format('woff'),
@@ -41,6 +43,19 @@
 .header .navbar-container .nav .nav-item.has-mega-menu .mega-menu .content-glosary {
     display: block !important;
 }
+
+ #lp-pom-box-19-color-overlay .lp-element .lp-pom-block{
+    width: 100% !important ;
+     margin: 0 auto !important ;
+    position: relative !important ;
+ 
+}
+.lp-pom-block-content{
+    width: 100% !important ;
+     margin: 0 auto !important ;
+    position: relative !important ;
+}
+
 
 /* .pin-spacer{
   height: 1856px !important;

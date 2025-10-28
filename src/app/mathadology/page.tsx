@@ -1,4 +1,4 @@
-import Mainnova from '../../components/b2b/mainb2b' 
+import Mainnova from '../../components/methadology/main' 
 
 export default function nova() {
   return <Mainnova />;
