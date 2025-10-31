@@ -1,13 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import '../css/style.css'; 
-import '../css/cookieblocker.min.css'; 
-import '../css/endrock.styles.css'; 
-// import Script from "next/script";
-import Footer from "../components/Home/footer";
+import "../css/style.css";
+import "../css/cookieblocker.min.css";
+import "../css/endrock.styles.css";
 
-
+import FooterControl from "./FooterControl";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,16 +24,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
-        <Footer/>
+        <FooterControl>{children}</FooterControl>
       </body>
     </html>
   );

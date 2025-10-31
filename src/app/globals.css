@@ -44,17 +44,55 @@
     display: block !important;
 }
 
- #lp-pom-box-19-color-overlay .lp-element .lp-pom-block{
-    width: 100% !important ;
-     margin: 0 auto !important ;
-    position: relative !important ;
- 
+#lp-pom-root .lp-positioned-content {
+  margin: 0px !important;
 }
-.lp-pom-block-content{
-    width: 100% !important ;
-     margin: 0 auto !important ;
-    position: relative !important ;
+@media only screen and (max-width: 600px){
+  #lp-pom-text-422 {
+        transform-origin: 0 !important;
+  }
 }
+
+@media (min-width: 300px) and (max-width: 350px) {
+  .mgleft {
+    margin-left: 5px;
+  }
+}
+@media (min-width: 351px) and (max-width: 400px) {
+  .mgleft {
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 450px) {
+  .mgleft {
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 550px) {
+  .mgleft {
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 639px) {
+  .mgleft {
+    margin-left: 50px;
+  }
+}
+div.lp-pom-root .lp-pom-text span {
+    line-height: 1;
+}
+body.circuit-page a {
+  color: inherit !important;
+}
+body.company-page .swiper-slide {
+  display: flex !important;
+}
+
+
+
 
 
 /* .pin-spacer{
