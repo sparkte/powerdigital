@@ -13,7 +13,7 @@ interface LayoutScalerProps {
   children: React.ReactNode;
 }
 
-export default function main() {
+export default function Main() {
     const [scale, setScale] = useState(1);
 
   useEffect(() => {
