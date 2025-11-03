@@ -84,13 +84,13 @@
 div.lp-pom-root .lp-pom-text span {
     line-height: 1;
 }
-body.circuit-page a {
-  color: inherit !important;
-}
+
 body.company-page .swiper-slide {
   display: flex !important;
 }
-
+#maxcontent{
+  width: max-content !important;
+}
 
 
 

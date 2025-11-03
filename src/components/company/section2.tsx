@@ -47,11 +47,11 @@ export default function Section2() {
           <div className="swiper swiper-carousel">
             <div className="swiper-wrapper">
               <div
+                id="maxcontent"
                 className="three-card swiper-slide"
                 style={{
                   backgroundColor: "rgb(175,170,249)",
                   color: "rgb(43,42,41)",
-                  width: "auto !important",
                 }}
               >
                 <div className="icon">

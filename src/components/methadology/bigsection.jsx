@@ -1,7 +1,12 @@
 import React from 'react'
 import Slider from './slider';
+import { useState } from "react";
 
 export default function bigsection() {
+      const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => setMenuOpen((prev) => !prev);
+
   return (
     <div className="lp-positioned-content">
       <div className="lp-element mgleft lp-pom-box" id="lp-pom-box-15">
@@ -202,22 +207,61 @@ export default function bigsection() {
           </div>
         </div>
       </div>
-      <div className="lp-element mgleft lp-pom-image toggle-btn" id="lp-pom-image-30">
+      <div className="lp-element mgleft lp-pom-image toggle-btn" id="lp-pom-image-30" onClick={toggleMenu}>
         <div className="lp-pom-image-container" style={{ overflow: "hidden" }}>
           <img
-            src={null}
+            // src={null}
             alt=""
-            data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/powerdigitalmarketing.com/the-power-circuit-v1/62b4bc58-hamburger.svg"
+            src="//d9hhrg4mnvzow.cloudfront.net/powerdigitalmarketing.com/the-power-circuit-v1/62b4bc58-hamburger.svg"
             srcSet=""
           />
         </div>
       </div>
+       <div
+        id="lp-pom-box-19"
+        className="lp-element mgleft lp-pom-box toggle-box transition-all duration-300"
+        style={{
+          display: menuOpen ? "block" : "none",
+        }}
+      >
+        <div id="lp-pom-box-19-color-overlay" />
+        <div className="lp-element lp-pom-image" id="lp-pom-image-20">
+          <div className="lp-pom-image-container" style={{ overflow: "hidden" }}>
+            <img
+              src="//d9hhrg4mnvzow.cloudfront.net/powerdigitalmarketing.com/the-power-circuit-v1/2b39be37-logo.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        {/* Nav links */}
+        <div className="lp-element lp-pom-box" id="lp-pom-box-21">
+          <div id="lp-pom-box-21-color-overlay" />
+          <nav style={{ textAlign: "center", lineHeight: "2em" }}>
+            <a href="/approach/">Approach</a><br />
+            <a href="/services/">Services</a><br />
+            <a href="/case-studies/">Results</a><br />
+            <a href="/nova/">Technology</a><br />
+            <a href="/company/">Company</a><br />
+          </nav>
+        </div>
+
+        <div className="lp-element lp-pom-box btn-hover" id="lp-pom-box-27">
+          <a
+            className="lp-element lp-pom-button"
+            id="lp-pom-button-28"
+            href="/workwithus/"
+          >
+            <span className="label">Work with us</span>
+          </a>
+        </div>
+        </div>
       <div className="lp-element mgleft lp-pom-image" id="lp-pom-image-31">
         <div className="lp-pom-image-container" style={{ overflow: "hidden" }}>
           <img
-           src={null}
+          //  src={null}
             alt=""
-            data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/powerdigitalmarketing.com/the-power-circuit-v1/2b39be37-logo.png"
+            src="//d9hhrg4mnvzow.cloudfront.net/powerdigitalmarketing.com/the-power-circuit-v1/2b39be37-logo.png"
             srcSet=""
           />
         </div>

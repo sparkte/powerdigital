@@ -2,7 +2,7 @@
 
 
 import React from 'react'
-// import '../../css/companyinsight.module.css';
+import '../../css/mathadology.module.css';
 // import LayoutScaler from "./LayoutScaler";
 import Firstsection from './firstsection'
 import Bigsection from './bigsection';

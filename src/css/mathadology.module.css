@@ -1,0 +1,10 @@
+.toggle-box {
+  transition: max-height 0.4s ease;
+  overflow: hidden;
+}
+.toggle-box[style*="display: block"] {
+  max-height: 500px; /* adjust as needed */
+}
+.toggle-box[style*="display: none"] {
+  max-height: 0;
+}
