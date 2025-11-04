@@ -909,8 +909,8 @@ const START = {
   logo: { top: pxToVw(20), left: pxToVw(0), width: pxToVw(1400), opacity: 1 },
   video: {
     borderRadius: 10,
-    top: pxToVw(376),
-    right: pxToVw(134),
+    top: pxToVw(360),
+    right: pxToVw(154),
     width: pxToVw(470.938),
     height: pxToVw(250.475),
   },
@@ -1065,7 +1065,7 @@ tlUnpinned
               left: 0,
               width: "calc(100vw - 15px)",
               padding:" 0 15px",
-              zIndex: 1001,
+              // zIndex: 1001,
             }}
           />
         </h1>
