@@ -909,8 +909,8 @@ const START = {
   logo: { top: pxToVw(20), left: pxToVw(0), width: pxToVw(1400), opacity: 1 },
   video: {
     borderRadius: 10,
-    top: pxToVw(360),
-    right: pxToVw(154),
+    top: pxToVw(350),
+    right: pxToVw(164),
     width: pxToVw(470.938),
     height: pxToVw(250.475),
   },
